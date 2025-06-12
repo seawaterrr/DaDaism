@@ -9,6 +9,14 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png" />
   <!-- css -->
   <link rel="stylesheet" href="./css/layout.css" />
+  <!-- gsap CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <!-- XE아이콘 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+  <!-- 슬라이드 CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -50,36 +58,71 @@
     </header>
     <main>
       <!-- 첫번째섹션 (메인이미지) -->
-      <section class="main_img">
-        <div class="title_text">
-          <h2>워너 브롱크호스트 : 온 세상이 캔버스</h2>
-          <h4 class="date">2025.03.21~2025.09.14</h4>
-          <h4 class="place">그라운드 시소</h4>
-          <div class="title_text2">
-            <p>
-              온 세상이 캔버스이고, 우리가 그 위를 걸어 다니는 주인공이라면
-              어떨까요?<br />
-              워너 브롱크호스트가 전하는 일상이 예술이 되는 경험. <br />
-              드넓은 세상 속에서 작은 일상의 특별함을 느껴보세요.
-            </p>
-            <a href="#"><span>자세히보기</span></a>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <section class="main_img1">
+              <div class="title_text">
+                <h2>워너 브롱크호스트 : 온 세상이 캔버스</h2>
+                <h4><i class="xi-calendar"></i>&ensp;2025.03.21~2025.09.14</h4>
+                <h4><i class="xi-maker"></i>&ensp;그라운드 시소</h4>
+                <div class="title_text2">
+                  <p>
+                    온 세상이 캔버스이고, 우리가 그 위를 걸어 다니는 주인공이라면
+                    어떨까요?<br />
+                    워너 브롱크호스트가 전하는 일상이 예술이 되는 경험. <br />
+                    드넓은 세상 속에서 작은 일상의 특별함을 느껴보세요.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide">
+            <section class="main_img2">
+              <div class="title_text">
+                <h2>워너 브롱크호스트 : 온 세상이 캔버스</h2>
+                <h4><i class="xi-calendar"></i>&ensp;2025.03.21~2025.09.14</h4>
+                <h4><i class="xi-maker"></i>&ensp;그라운드 시소</h4>
+                <div class="title_text2">
+                  <p>
+                    온 세상이 캔버스이고, 우리가 그 위를 걸어 다니는 주인공이라면
+                    어떨까요?<br />
+                    워너 브롱크호스트가 전하는 일상이 예술이 되는 경험. <br />
+                    드넓은 세상 속에서 작은 일상의 특별함을 느껴보세요.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-slide">
+            <section class="main_img3">
+              <div class="title_text">
+                <h2>워너 브롱크호스트 : 온 세상이 캔버스</h2>
+                <h4><i class="xi-calendar"></i>&ensp;2025.03.21~2025.09.14</h4>
+                <h4><i class="xi-maker"></i>&ensp;그라운드 시소</h4>
+                <div class="title_text2">
+                  <p>
+                    온 세상이 캔버스이고, 우리가 그 위를 걸어 다니는 주인공이라면
+                    어떨까요?<br />
+                    워너 브롱크호스트가 전하는 일상이 예술이 되는 경험. <br />
+                    드넓은 세상 속에서 작은 일상의 특별함을 느껴보세요.
+                  </p>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
-      </section>
+        <div class="autoplay-progress">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div>
+      </div>
       <!-- 두번째섹션(최신무료전시) -->
       <section class="sec2">
         <div class="content">
-          <div class="title1">
-            <h3>최신 무료 전시</h3>
-            <div class="title1_icon">
-              <button>
-                <img src="./img/main_icon/left.png" alt="왼쪽" />
-              </button>
-              <button>
-                <img src="./img/main_icon/right.png" alt="오른쪽" />
-              </button>
-            </div>
-          </div>
+          <h3>최신 무료 전시</h3>
           <div class="posters">
             <a href="#">
               <div class="box">
@@ -151,7 +194,7 @@
         <div class="content">
           <div class="title2">
             <h3>유형별 인기 전시</h3>
-            <button>
+            <button type="button">
               <img src="./img/main_icon/refresh-cw.png" alt="새로고침" />
             </button>
           </div>
@@ -177,27 +220,174 @@
                 <div class="charts">
                   <div class="circle">
                     <div class="chart">
-                      <div class="chart-bar" data-deg="50"></div>
+                      <div class="chart-bar" data-degree="306" data-fill-color="#587d00"></div>
                     </div>
                     <div class="cir_text">
-                      <h3>남자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20%</h3>
-                      <h3>여자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80%</h3>
+                      <h3>남자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15%</h3>
+                      <h3>여자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;85%</h3>
+                    </div>
+                  </div>
+                  <div class="bars">
+                    <div class="ages">
+                      <h4>10대</h4>
+                      <h4 style="color:#587d00; font-weight:bold;">20대</h4>
+                      <h4>30대</h4>
+                      <h4>40대</h4>
+                      <h4>50대 이상</h4>
+                    </div>
+                    <div class="graph">
+                      <div class="bar initial-bar" data-width="91"></div>
+                      <div class="bar initial-bar" data-width="284" style="background-color: #587d00;"></div>
+                      <div class="bar initial-bar" data-width="234"></div>
+                      <div class="bar initial-bar" data-width="158"></div>
+                      <div class="bar initial-bar" data-width="45"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sec3_con">
+            <div>
+              <a href="#"><img src="./img/main_img/poster6-4.png" alt="도쿄리벤저스전" /></a>
+            </div>
+            <div class="right_con">
+              <div class="subtitle">
+                <span>20대 남성 예매율 1위</span>
+                <a href="#">
+                  <h4>도쿄卍리벤저스展</h4>
+                </a>
+                <div class="info">
+                  <div class="date2">2025.03.29~2025.06.29</div>
+                  <div class="place2">덕스(DUEX) 홍대</div>
+                </div>
+              </div>
+              <div class="graph">
+                <h4>예매자 통계</h4>
+              </div>
+              <div>
+                <div class="charts">
+                  <div class="circle">
+                    <div class="chart">
+                      <div class="chart-bar" data-degree="216" data-fill-color="#587d00"></div>
+                    </div>
+                    <div class="cir_text">
+                      <h3>여자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40%</h3>
+                      <h3>남자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60%</h3>
+                    </div>
+                  </div>
+                  <div class="bars">
+                    <div class="ages">
+                      <h4>10대</h4>
+                      <h4 style="color:#587d00; font-weight:bold;">20대</h4>
+                      <h4>30대</h4>
+                      <h4>40대</h4>
+                      <h4>50대 이상</h4>
+                    </div>
+                    <div class="graph">
+                      <div class="bar initial-bar" data-width="190"></div>
+                      <div class="bar initial-bar" data-width="234" style="background-color: #587d00;"></div>
+                      <div class="bar initial-bar" data-width="158"></div>
+                      <div class="bar initial-bar" data-width="52"></div>
+                      <div class="bar initial-bar" data-width="45"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sec3_con">
+            <div>
+              <a href="#"><img src="./img/main_img/poster6-2.png" alt="제이홉전시" /></a>
+            </div>
+            <div class="right_con">
+              <div class="subtitle">
+                <span>30대 여성 예매율 1위</span>
+                <a href="#">
+                  <h4>제이홉 전시 ‘AND WHAT？’</h4>
+                </a>
+                <div class="info">
+                  <div class="date2">2025.05.30~2025.06.22</div>
+                  <div class="place2">AK플라자 홍대점</div>
+                </div>
+              </div>
+              <div class="graph">
+                <h4>예매자 통계</h4>
+              </div>
+              <div>
+                <div class="charts">
+                  <div class="circle">
+                    <div class="chart">
+                      <div class="chart-bar" data-degree="250" data-fill-color="#587d00"></div>
+                    </div>
+                    <div class="cir_text">
+                      <h3>남자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30%</h3>
+                      <h3>여자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;70%</h3>
                     </div>
                   </div>
                   <div class="bars">
                     <div class="ages">
                       <h4>10대</h4>
                       <h4>20대</h4>
-                      <h4>30대</h4>
+                      <h4 style="color:#587d00; font-weight:bold;">30대</h4>
                       <h4>40대</h4>
                       <h4>50대 이상</h4>
                     </div>
                     <div class="graph">
-                      <div class="bar"></div>
-                      <div class="bar"></div>
-                      <div class="bar"></div>
-                      <div class="bar"></div>
-                      <div class="bar"></div>
+                      <div class="bar initial-bar" data-width="214"></div>
+                      <div class="bar initial-bar" data-width="208"></div>
+                      <div class="bar initial-bar" data-width="234" style="background-color: #587d00;"></div>
+                      <div class="bar initial-bar" data-width="201"></div>
+                      <div class="bar initial-bar" data-width="52"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sec3_con">
+            <div>
+              <a href="#"><img src="./img/main_img/poster6-3.png" alt="론뮤익개인전" /></a>
+            </div>
+            <div class="right_con">
+              <div class="subtitle">
+                <span>30대 남성 예매율 1위</span>
+                <a href="#">
+                  <h4>론뮤익 개인전</h4>
+                </a>
+                <div class="info">
+                  <div class="date2">2025.05.30~2025.06.22</div>
+                  <div class="place2">국립현대미술관 서울</div>
+                </div>
+              </div>
+              <div class="graph">
+                <h4>예매자 통계</h4>
+              </div>
+              <div>
+                <div class="charts">
+                  <div class="circle">
+                    <div class="chart">
+                      <div class="chart-bar" data-degree="270" data-fill-color="#587d00"></div>
+                    </div>
+                    <div class="cir_text">
+                      <h3>여자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;35%</h3>
+                      <h3>남자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;75%</h3>
+                    </div>
+                  </div>
+                  <div class="bars">
+                    <div class="ages">
+                      <h4>10대</h4>
+                      <h4>20대</h4>
+                      <h4 style="color:#587d00; font-weight:bold;">30대</h4>
+                      <h4>40대</h4>
+                      <h4>50대 이상</h4>
+                    </div>
+                    <div class="graph">
+                      <div class="bar initial-bar" data-width="52"></div>
+                      <div class="bar initial-bar" data-width="208"></div>
+                      <div class="bar initial-bar" data-width="234"></div>
+                      <div class="bar initial-bar" data-width="102"></div>
+                      <div class="bar initial-bar" data-width="98"></div>
                     </div>
                   </div>
                 </div>
@@ -507,6 +697,8 @@
       </div>
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

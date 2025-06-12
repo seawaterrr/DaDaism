@@ -25,9 +25,10 @@ header {
   z-index: 999;
   box-sizing: border-box;
   transition: background-color 0.2s;
+  background-color: transparent;
 }
 header:hover {
-  background-color: #fff;
+  background-color: #ffffff;
   border-bottom: 0.3px solid rgba(0, 0, 0, 0.2);
 }
 .con {
@@ -134,92 +135,109 @@ header:hover .icons > button > img {
   filter: none;
 }
 /* 메인이미지 */
-.main_img {
+.swiper.mySwiper {
+  position: relative;
+}
+.autoplay-progress {
+  position: absolute;
+  right: 160px;
+  bottom: 140px;
+  z-index: 10;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: rgba(255, 255, 255, 0.8);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+.main_img1 {
   position: relative;
   font-family: "Noto Sans KR", sans-serif;
   width: 100%;
-  height: 1039px;
+  height: 100vh;
+  overflow: hidden;
   background: url(../img/main_img/main_img.png) no-repeat;
   background-attachment: fixed;
 }
-.main_img .title_text {
+.main_img2 {
+  position: relative;
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url(../img/main_img/main_img2.png) no-repeat;
+  background-attachment: fixed;
+}
+.main_img3 {
+  position: relative;
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url(../img/main_img/main_img3.png) no-repeat;
+  background-attachment: fixed;
+}
+.main_img1 .title_text,
+.main_img2 .title_text,
+.main_img3 .title_text {
   position: absolute;
   top: 200px;
   left: 160px;
 }
+
 .title_text {
   width: 1589px;
   height: 697px;
 }
+
 .title_text h2 {
+  text-align: left;
   color: #fff;
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 27px;
 }
+
 .title_text h4 {
+  text-align: left;
   color: #fff;
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 15px;
 }
-.date {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.place {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.date::before {
-  content: "date";
-  font-size: 0;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  background: url(../img/main_icon/calendar.png) no-repeat;
-}
-.place::before {
-  content: "";
-  width: 18px;
-  height: 18px;
-  display: block;
-  background: url(../img/main_icon/map-pin.png) no-repeat;
-}
+
 .title_text2 {
   display: flex;
 }
+
 .title_text2 p {
+  text-align: left;
   color: #fff;
   font-size: 18px;
   font-weight: 600;
   line-height: 33px;
   margin-top: 442px;
 }
-.title_text2 a {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 700;
-  margin-top: auto;
-  margin-left: auto;
-}
-.title_text2 a span {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.title_text2 span::after {
-  content: "";
-  width: 30px;
-  height: 30px;
-  display: block;
-  background: url(../img/main_icon/chevron-right.png);
-}
 /* 두번째 섹션 */
 .sec2 {
-  margin-top: 80px;
+  margin-top: 130px;
   margin-bottom: 170px;
 }
 h3 {
@@ -230,19 +248,6 @@ h3 {
   font-size: 24px;
   font-family: 500;
   margin-bottom: 40px;
-}
-.title1 {
-  display: flex;
-  justify-content: space-between;
-}
-.title1_icon > button {
-  width: 25px;
-  height: 25px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  margin-left: 10px;
-  opacity: 0.8;
 }
 .posters {
   width: 1592px;
@@ -379,7 +384,7 @@ h3 {
   width: inherit;
   height: inherit;
   border-radius: 50%;
-  background: conic-gradient(#96a376 70deg, #587d00 70deg); /* 차트 설정 */
+  background: conic-gradient(#587d00 70deg, #96a376 70deg); /* 차트 설정 */
 }
 .circle {
   display: flex;
@@ -397,27 +402,11 @@ h3 {
   color: #587d00;
   font-weight: bold;
 }
-.bar {
+.bar.initial-bar {
   height: 18px;
   margin-bottom: 27px;
   background-color: #96a376;
   border-radius: 0 20px 20px 0;
-}
-.bar:first-child {
-  width: 91px;
-}
-.bar:nth-child(2) {
-  width: 284px;
-  background-color: #587d00;
-}
-.bar:nth-child(3) {
-  width: 234px;
-}
-.bar:nth-child(4) {
-  width: 158px;
-}
-.bar:nth-child(5) {
-  width: 45px;
 }
 .bars {
   gap: 40px;

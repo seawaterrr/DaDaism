@@ -69,20 +69,20 @@
           </div>
         </div>
       </section>
-      <div class="main_con">
+      <div class="content">
+        <!-- 칩 -->
+        <ul class="tab">
+          <li class="tab__item active">
+            <a href="#tab1">국내</a>
+          </li>
+          <li class="tab__item">
+            <a href="#tab2">해외</a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab__content-wrapper">
         <!-- 국내 -->
-        <div class="local_choice">
-          <!-- 칩 -->
-          <section class="chips">
-            <div class="content">
-              <button class="internal" type="button">
-                국내
-              </button>
-              <button class="external" type="button">
-                해외
-              </button>
-            </div>
-          </section>
+        <section id="tab1" class="choice">
           <!-- 지역선택 -->
           <section class="choice">
             <div class="content">
@@ -394,20 +394,9 @@
               </div>
             </div>
           </section>
-        </div>
+        </section>
         <!-- 해외 -->
-        <div class="global_choice">
-          <!-- 칩 -->
-          <section class="chips">
-            <div class="content">
-              <button class="internal" type="button">
-                국내
-              </button>
-              <button class="external" type="button">
-                해외
-              </button>
-            </div>
-          </section>
+        <div id="tab2" class="choice">
           <!-- 지역선택 -->
           <section class="choice">
             <div class="content">
@@ -415,7 +404,7 @@
               <div class="location">
                 <table>
                   <tr>
-                    <td><button type="button">서울</button></td>
+                    <td><button type="button">일본</button></td>
                     <td><button type="button">경기</button></td>
                     <td><button type="button">인천</button></td>
                     <td><button type="button">부산</button></td>
@@ -753,6 +742,24 @@
       </div>
     </footer>
   </div>
+  <script>
+    const tabItem = document.querySelectorAll(".tab__item");
+    const tabContent = document.querySelectorAll(".tab__content");
+
+    tabItem.forEach((item, index) => {
+      item.addEventListener("click", (e) => {
+        e.preventDefault();
+        tabContent.forEach((content) => {
+          content.classList.remove("active");
+        });
+        tabItem.forEach((content) => {
+          content.classList.remove("active");
+        });
+        tabItem[index].classList.add("active");
+        tabContent[index].classList.add("active");
+      });
+    });
+  </script>
 </body>
 
 </html>

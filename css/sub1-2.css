@@ -165,13 +165,13 @@ header {
   font-weight: 500;
   line-height: 30px;
 }
-/* 지역선택 */
+/* 가격 선택 */
 h2 {
   font-size: 24px;
   font-weight: 500;
 }
 .price {
-  margin: 50px 0 120px 0;
+  margin: 100px 0 120px 0;
 }
 .value {
   margin-top: 40px;
@@ -181,7 +181,7 @@ h2 {
   border-radius: 999px;
   display: flex;
   justify-content: space-between;
-  padding: 0 50px 0 50px;
+  padding: 0 100px 0 100px;
   box-sizing: border-box;
 }
 .value button {
@@ -227,6 +227,11 @@ h2 {
   margin-left: 8px;
 }
 .detail h4 {
+  width: 100%;
+  height: 22px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
