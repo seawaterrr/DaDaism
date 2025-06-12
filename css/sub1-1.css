@@ -210,7 +210,7 @@ tab__content-wrapper {
 .tab__content {
   display: none;
 }
-.tab__item.active {
+.tab__content.active {
   display: block;
 }
 
@@ -282,6 +282,11 @@ h2 {
   margin-left: 8px;
 }
 .detail h4 {
+  height: 24px;
+  width: 272px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
