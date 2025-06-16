@@ -191,6 +191,10 @@ h2 {
   background-color: transparent;
   cursor: pointer;
 }
+.value button.active {
+  color: #587d00;
+  font-weight: bold;
+}
 /* 지역 인기전시 */
 .rank h2 {
   margin-bottom: 40px;
@@ -294,6 +298,16 @@ h2 {
   justify-content: space-between;
   margin-top: 16px;
   margin-bottom: 120px;
+}
+.up_4dollar .posters {
+  display: flex;
+  justify-content: start;
+  gap: 48px;
+}
+.up_4dollar .titles {
+  display: flex;
+  justify-content: start;
+  gap: 48px;
 }
 /* footer */
 footer {
