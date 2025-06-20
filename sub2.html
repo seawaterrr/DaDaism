@@ -143,9 +143,16 @@
             <section class="local_list">
                 <div class="content">
                     <div class="top_con">
-                        <ul>
-                            <li><a href="#">인기순&ensp;&ensp;<i class="xi-angle-down-thin"></i></a></li>
-                        </ul>
+                        <form class="select_box">
+                            <select name="course" class="course">
+                                <option value="opt1">기본순</option>
+                                <option value="opt2">인기순</option>
+                                <option value="opt3">가격순</option>
+                                <option value="opt4">최신순</option>
+                                <option value="opt5">종료임박순</option>
+                                <option value="opt6">리뷰많은순</option>
+                            </select>
+                        </form>
                         <form class="search_box">
                             <input class="search_text" type="text" placeholder="검색어를 입력하세요.">
                             <button class="search_btn" type="submit"><i class="xi-search"></i></button>

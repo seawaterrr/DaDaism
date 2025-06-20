@@ -238,10 +238,8 @@ h2 {
   font-size: 16px;
   cursor: pointer;
 }
-.location tr:first-child td:first-of-type {
+.location button.active {
   background-color: #587d00;
-}
-.location tr:first-child td:first-of-type button {
   color: #fff;
   font-weight: bold;
 }
@@ -254,7 +252,8 @@ h2 {
   width: 1592px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 48px;
 }
 .box {
   width: 280px;
@@ -271,7 +270,8 @@ h2 {
 .rank .titles {
   width: 1592px;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 48px;
   margin-top: 16px;
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 70px;
@@ -302,13 +302,12 @@ h2 {
   justify-content: space-between;
   margin: 60px 0 80px 0;
 }
-.top_con ul {
-  width: 117px;
+.course {
+  width: 200px;
   height: 29px;
-  margin-top: 25px;
-}
-.top_con li {
   font-size: 24px;
+  border: none;
+  padding-left: 8px;
 }
 .search_box {
   height: 30px;
@@ -346,7 +345,8 @@ h2 {
 .titles {
   width: 1592px;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 48px;
   margin-top: 16px;
   margin-bottom: 120px;
 }
