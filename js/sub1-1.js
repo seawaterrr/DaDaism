@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
     호주: ["australiaRank", "australiaList"],
     독일: ["germanyRank", "germanyList"],
     홍콩: ["hongkongRank", "hongkongList"],
-    이집트: ["egyptRank", "egyptList"],
+    아르헨티나: ["ArgentineRank", "ArgentineList"],
     스위스: ["switzerlandRank", "switzerlandList"],
     그리스: ["greeceRank", "greeceList"],
     태국: ["thailandRank", "thailandList"],
