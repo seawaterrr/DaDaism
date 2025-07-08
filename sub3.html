@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DaDaism</title>
+    <!-- XE아이콘 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/xeicon/2/xeicon.min.css" />
     <!-- 파비콘 -->
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png" />
-    <link rel="stylesheet" href="./css/sub2.css">
+    <link rel="stylesheet" href="../css/sub3.css" />
 </head>
 
 <body>
@@ -50,7 +52,103 @@
             </div>
         </header>
         <!-- 메인 -->
-        <main></main>
+        <main>
+            <section class="left_con">
+                <div class="content">
+                    <form class="search_box">
+                        <input class="search_text" type="text" placeholder="검색어를 입력하세요." />
+                        <button class="search_btn" type="submit">
+                            <i class="xi-search"></i>
+                        </button>
+                    </form>
+                    <div class="card">
+                        <div class="museum_img">
+                            <img src="./img/sub3/mmca_seoul.png" alt="국립현대미술관서울">
+                        </div>
+                        <div class="detail">
+                            <h3 class="museum_name">국립현대미술관 서울</h3>
+                            <div class="info">
+                                <div class="place">
+                                    <h4><i class="xi-maker"></i> &nbsp;서울 종로구 삼청로 30</h4>
+                                    <p>3호선 안국역 1번 출구(759m, 약 14분 소요)</p>
+                                </div>
+                                <div class="time">
+                                    <h4><i class="xi-time"></i> &nbsp;운영시간</h4>
+                                    <p>월, 화, 목, 금, 일&nbsp;&nbsp;10:00-18:00</p>
+                                    <p>수, 토&nbsp;&nbsp;10:00-21:00</p>
+                                </div>
+                                <div class="phone">
+                                    <h4><i class="xi-call"></i> &nbsp;02-3701-9500</h4>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <h3>전시 <span> 6</span></h3>
+                                <div class="exhibition">
+                                    <div class="ex_titile">
+                                        <h3>우리를 바꾸는 다섯 가지 대화</h3>
+                                        <p><span>기간&nbsp;&nbsp;</span>2025.04.04~2025.07.13</p>
+                                    </div>
+                                    <div class="ex_img">
+                                        <img src="./img/sub3/fiveTell.png" alt="우리를바꾸는다섯가지대화">
+                                    </div>
+                                </div>
+                                <div class="exhibition">
+                                    <div class="ex_title">
+                                        <h3>론 뮤익 개인전</h3>
+                                        <p><span>기간&nbsp;&nbsp;</span>2025.04.04~2025.07.13</p>
+                                    </div>
+                                    <div class="ex_img">
+                                        <img src="./img/sub3/ronMueck.png" alt="론뮤익개인전">
+                                    </div>
+                                </div>
+                                <div class="exhibition">
+                                    <div class="ex_title">
+                                        <h3>MMCA 서울 상설전 <한국현대미술 하이라이트>
+                                        </h3>
+                                        <p><span>기간&nbsp;&nbsp;</span>2025.05.01~2026.05.03</p>
+                                    </div>
+                                    <div class="ex_img">
+                                        <img src="./img/sub3/highlight.png" alt="한국현대미술하이라이트">
+                                    </div>
+                                </div>
+                                <div class="exhibition">
+                                    <div class="ex_title">
+                                        <h3>마음_봄</h3>
+                                        <p><span>기간&nbsp;&nbsp;</span>2025.05.02~2026.02.27</p>
+                                    </div>
+                                    <div class="ex_img">
+                                        <img src="./img/sub3/spring.png" alt="마음봄">
+                                    </div>
+                                </div>
+                                <div class="exhibition">
+                                    <div class="ex_title">
+                                        <h3>기울인 몸들 : 서로의 취약함이 만날 때</h3>
+                                        <p><span>기간&nbsp;&nbsp;</span>2025.05.16~2025.07.20</p>
+                                    </div>
+                                    <div class="ex_img">
+                                        <img src="./img/sub3/body.png" alt="기울인몸들">
+                                    </div>
+                                </div>
+                                <div class="exhibition">
+                                    <div class="ex_title">
+                                        <h3>MMCA 다원예술 2025 : 숲</h3>
+                                        <p><span>기간&nbsp;&nbsp;</span>2025.05.23~2026.01.15</p>
+                                    </div>
+                                    <div class="ex_img">
+                                        <img src="./img/sub3/forest.png" alt="다원예술숲">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="right_con">
+                <div class="content">
+                    <div id="map" style="width:500px;height:600px;"></div>
+                </div>
+            </section>
+        </main>
         <!-- 푸터 -->
         <footer>
             <div class="content">
@@ -82,6 +180,17 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d656370b6821b5c6a715ee357ecd0887"></script>
+    <script>
+        var container = document.getElementById("map");
+        var options = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667),
+            level: 3,
+        };
+
+        var map = new kakao.maps.Map(container, options);
+    </script>
 </body>
 
 </html>

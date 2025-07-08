@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DaDaism</title>
+  <link rel="stylesheet" href="./css/login.css">
+  <!-- XE아이콘 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+  <!-- 파비콘 -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png" />
+  <link rel="stylesheet" href="../css/sub2.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- 헤더 -->
+    <header>
+      <div class="con">
+        <!-- 로고 -->
+        <h1>
+          <a href="/"><img src="../img/logo.png" alt="로고" /></a>
+        </h1>
+        <!-- gnb -->
+        <nav id="gnb">
+          <ul>
+            <li>
+              <a href="#">EXHIBITION</a>
+              <!-- 2차 메뉴 -->
+              <div class="submenu_wrap">
+                <ul class="submenu">
+                  <li><a href="./sub1-1.html">지역별</a></li>
+                  <li><a href="./sub1-2.html">가격별</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="../sub2.html">GALLERY</a></li>
+            <li><a href="../sub3.html">MAP</a></li>
+            <li><a href="../sub4.html">REVIEW</a></li>
+          </ul>
+        </nav>
+        <!-- icon -->
+        <div class="icons">
+          <button type="button">
+            <img src="../img/header_icon/search.png" alt="검색" />
+          </button>
+          <button type="button">
+            <img src="../img/header_icon/user.png" alt="마이페이지" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <div class="login">
+          <div class="left_con">
+            <img src="./img/login/login_logo.png" alt="로그인로고">
+            <h3>DaDaism에 오신 것을 환영합니다.</h3>
+          </div>
+          <div class="right_con">
+            <div class="user_list">
+              <!-- 아이디 -->
+              <div class="user_info">
+                <label for="user_id" class="user_icon1">
+                  <input type="text" name="user_id" id="user_id" placeholder="아이디" required />
+                </label>
+              </div>
+              <!-- 비밀번호 -->
+              <div class="user_info" id="user_info">
+                <label for="user_pw" class="user_icon2">
+                  <input type="password" name="user_pw" id="user_pw" placeholder="비밀번호" required />
+                </label>
+              </div>
+              <button type="submit" class="login_btn">로그인</button>
+              <div class="access">
+                <a href="#">비밀번호 찾기</a>
+                <a href="#">아이디 찾기</a>
+                <a href="#">회원가입</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- 푸터 -->
+    <footer>
+      <div class="content">
+        <div>
+          <img src="../img/footer_img/footer_logo.png" alt="다다이즘사각로고" />
+        </div>
+        <div class="footer_text">
+          <p>다다이즘(주)</p>
+          <p>대표:장해수 &nbsp; 주소:경기도 안양시 만안구, 5층 502호</p>
+          <p>
+            이메일 : seawater@DaDaism.com &nbsp; 고객센터 : 1544-1234
+            <a href="#">1:1 문의</a>
+          </p>
+          <p>
+            사업자등록번호 : 111-22-333333 &nbsp; 통신판매업신고 :
+            제1001-12345호 <a href="#">사업자 정보확인</a>
+          </p>
+          <p>호스팅 서비스사업자 : 다다이즘(주)</p>
+          <p>Copyright &copy;DaDaism Crop.All Rights Reserved.</p>
+        </div>
+        <div class="right_icons">
+          <ul>
+            <li>
+              <a href="#"><img src="../img/footer_icons/facebook.png" alt="페이스북로고" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="../img/footer_icons/insta.png" alt="인스타그램로고" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="../img/footer_icons/kakao.png" alt="카카오톡로고" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="../img/footer_icons/youtube.png" alt="유튜브로고" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
