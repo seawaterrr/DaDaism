@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // --- 추가된 하트 버튼 코드 시작 ---
+  const heartButton = document.querySelector('button[name="heart"]');
+
+  heartButton.addEventListener("click", function () {
+    const heartIcon = this.querySelector("i");
+    // classList.toggle을 사용하여 'xi-heart'와 'xi-heart-o' 클래스를 번갈아 적용합니다.
+    heartIcon.classList.toggle("xi-heart");
+    heartIcon.classList.toggle("xi-heart-o");
+  });
+  // --- 추가된 하트 버튼 코드 끝 ---
+
   const reviewParagraphs = document.querySelectorAll(".review p");
   const moreButtons = document.querySelectorAll(".more button");
 

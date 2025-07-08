@@ -31,18 +31,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
       "-=0.3"
     )
     .to(
-      "#gnb a",
+      "#gnb>ul>li>a",
       {
-        color: "rgb(0,0,0)",
+        color: "rgb(51,51,51)",
       },
       "-=0.3"
     )
     .to(
-      ".icons button > img",
+      ".xi-user-o",
       {
-        filter: "none",
+        color: "rgb(51,51,51)",
       },
       "-=0.3"
+    )
+    .to(
+      ".xi-search",
+      {
+        color: "rgb(51,51,51)",
+      },
+      "-=0.2"
     );
 
   gsap

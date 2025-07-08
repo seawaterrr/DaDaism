@@ -11,6 +11,8 @@
     <!-- 파비콘 -->
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png" />
     <link rel="stylesheet" href="../css/sub3.css" />
+    <!-- Kakao Map API -->
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d656370b6821b5c6a715ee357ecd0887&autoload=false"></script>
 </head>
 
 <body>
@@ -27,7 +29,6 @@
                     <ul>
                         <li>
                             <a href="#">EXHIBITION</a>
-                            <!-- 2차 메뉴 -->
                             <div class="submenu_wrap">
                                 <ul class="submenu">
                                     <li><a href="./sub1/sub1-1.html">지역별</a></li>
@@ -43,25 +44,26 @@
                 <!-- icon -->
                 <div class="icons">
                     <button type="button">
-                        <img src="./img/header_icon/search.png" alt="검색" />
+                        <i class="xi-search"></i>
                     </button>
                     <button type="button">
-                        <img src="./img/header_icon/user.png" alt="마이페이지" />
+                        <a href="./login.html"><i class="xi-user-o"></i></a>
                     </button>
                 </div>
             </div>
         </header>
+
         <!-- 메인 -->
         <main>
-            <section class="left_con">
-                <div class="content">
+            <div class="content">
+                <section class="left_con">
                     <form class="search_box">
                         <input class="search_text" type="text" placeholder="검색어를 입력하세요." />
                         <button class="search_btn" type="submit">
                             <i class="xi-search"></i>
                         </button>
                     </form>
-                    <div class="card">
+                    <div class="card" id="card1">
                         <div class="museum_img">
                             <img src="./img/sub3/mmca_seoul.png" alt="국립현대미술관서울">
                         </div>
@@ -84,7 +86,7 @@
                             <div class="list">
                                 <h3>전시 <span> 6</span></h3>
                                 <div class="exhibition">
-                                    <div class="ex_titile">
+                                    <div class="ex_title">
                                         <h3>우리를 바꾸는 다섯 가지 대화</h3>
                                         <p><span>기간&nbsp;&nbsp;</span>2025.04.04~2025.07.13</p>
                                     </div>
@@ -141,14 +143,89 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="right_con">
-                <div class="content">
-                    <div id="map" style="width:500px;height:600px;"></div>
-                </div>
-            </section>
+                    <div class="card" id="card2">
+                        <div class="museum_img">
+                            <img src="./img/sub3/folklore.png" alt="국립민속박물관">
+                        </div>
+                        <div class="detail">
+                            <h3 class="museum_name">국립민속박물관</h3>
+                            <div class="info">
+                                <div class="place">
+                                    <h4><i class="xi-maker"></i> &nbsp;서울 종로구 삼청로 37</h4>
+                                    <p>3호선 안국역 1번 출구(879m, 약 15분 소요)</p>
+                                </div>
+                                <div class="time">
+                                    <h4><i class="xi-time"></i> &nbsp;운영시간</h4>
+                                    <p>월, 화, 수, 목, 금, 일&nbsp;&nbsp;09:00-18:00</p>
+                                    <p>토&nbsp;&nbsp;09:00-21:00</p>
+                                </div>
+                                <div class="phone">
+                                    <h4><i class="xi-call"></i> &nbsp;02-3704-3114</h4>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <h3>전시 <span> 6</span></h3>
+                                <div class="exhibition">
+                                    <div class="ex_title">
+                                        <h3>사진관 전성시대</h3>
+                                        <p><span>기간&nbsp;&nbsp;</span>2025.05.14~2025.07.27</p>
+                                    </div>
+                                    <div class="ex_img">
+                                        <img src="./img/sub3/studio.png" alt="사진관전성시대">
+                                    </div>
+                                </div>
+                                <div class="exhibition">
+                                    <div class="ex_title">
+                                        <h3>오늘도, 기념 : 우리가 기념품을 간직하는 이유</h3>
+                                        <p><span>기간&nbsp;&nbsp;</span>2025.05.27~2025.09.14</p>
+                                    </div>
+                                    <div class="ex_img">
+                                        <img src="./img/sub3/souvenir.png" alt="우리가기념품을간직하는이유">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="card3">
+                        <div class="museum_img">
+                            <img src="./img/sub3/ground_ss.png" alt="그라운드시소서촌">
+                        </div>
+                        <div class="detail">
+                            <h3 class="museum_name">그라운드 시소 서촌</h3>
+                            <div class="info">
+                                <div class="place">
+                                    <h4><i class="xi-maker"></i> &nbsp;서울 종로구 자하문로6길 18-8</h4>
+                                    <p>3호선 경복궁역 3번 출구(223m, 약 3분 소요)</p>
+                                </div>
+                                <div class="time">
+                                    <h4><i class="xi-time"></i> &nbsp;운영시간</h4>
+                                    <p>월, 화, 수, 목, 금, 토, 일&nbsp;&nbsp;10:00-19:00</p>
+                                </div>
+                                <div class="phone">
+                                    <h4><i class="xi-call"></i> &nbsp;070-4473-9746</h4>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <h3>전시 <span> 1</span></h3>
+                                <div class="exhibition">
+                                    <div class="ex_title">
+                                        <h3>워너 브롱크호스트 : 온 세상이 캔버스</h3>
+                                        <p><span>기간&nbsp;&nbsp;</span>2025.03.21~2025.09.14</p>
+                                    </div>
+                                    <div class="ex_img">
+                                        <img src="./img/sub3/werner.png" alt="워너브롱크호스트">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="right_con">
+                    <div id="map" style="width:100%;height:685px;"></div>
+                </section>
+            </div>
         </main>
+
         <!-- 푸터 -->
         <footer>
             <div class="content">
@@ -163,34 +240,19 @@
                 </div>
                 <div class="right_icons">
                     <ul>
-                        <li>
-                            <a href="#"><img src="./img/footer_icons/facebook.png" alt="페이스북로고"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/footer_icons/insta.png" alt="인스타그램로고"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/footer_icons/kakao.png" alt="카카오톡로고"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/footer_icons/youtube.png" alt="유튜브로고"></a>
-                        </li>
+                        <li> <a href="#"><img src="./img/footer_icons/facebook.png" alt="페이스북로고"></a></li>
+                        <li> <a href="#"><img src="./img/footer_icons/insta.png" alt="인스타그램로고"></a></li>
+                        <li> <a href="#"><img src="./img/footer_icons/kakao.png" alt="카카오톡로고"></a></li>
+                        <li> <a href="#"><img src="./img/footer_icons/youtube.png" alt="유튜브로고"></a></li>
                     </ul>
                 </div>
             </div>
         </footer>
     </div>
-    <script type="text/javascript"
-        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d656370b6821b5c6a715ee357ecd0887"></script>
-    <script>
-        var container = document.getElementById("map");
-        var options = {
-            center: new kakao.maps.LatLng(33.450701, 126.570667),
-            level: 3,
-        };
 
-        var map = new kakao.maps.Map(container, options);
-    </script>
+    <!-- 지도 스크립트 -->
+    <script src="./js/sub3.js"></script>
+
 </body>
 
 </html>
