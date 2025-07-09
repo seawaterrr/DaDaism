@@ -1,0 +1,416 @@
+@import url(./reset.css);
+/* 웹폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif, "Prompt", sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+.wrap {
+  width: 100%;
+  height: auto;
+}
+.content {
+  width: 1600px;
+  height: auto;
+  margin: 0 160px;
+}
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.con {
+  width: 1600px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+/* 로고 */
+h1 {
+  width: 122.15px;
+  height: 24px;
+}
+/* 메뉴 */
+#gnb {
+  width: 442px;
+  height: 80px;
+}
+#gnb > ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+#gnb > ul > li {
+  font-family: "Prompt", sans-serif;
+  position: relative;
+  font-size: 20px;
+}
+#gnb > ul > li > a {
+  color: #333;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+#gnb > ul > li > a:before {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  color: transparent;
+  content: "•";
+  text-shadow: 0 0 transparent;
+  font-size: 13pt;
+  -webkit-transition: text-shadow 0.3s, color 0.3s;
+  -moz-transition: text-shadow 0.3s, color 0.3s;
+  transition: text-shadow 0.3s, color 0.3s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+/* 서브메뉴 */
+.submenu {
+  width: 100%;
+  height: 0px;
+  line-height: auto;
+  position: absolute;
+  top: 100px;
+  z-index: 500;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+.submenu > li {
+  width: 111px;
+  height: fit-content;
+  text-align: center;
+}
+.submenu > li:last-child {
+  margin-top: 50px;
+}
+.submenu > li > a {
+  color: #333;
+}
+#gnb:hover .submenu {
+  height: 152px;
+}
+/* submenu뒤에 있는 전체 배경 */
+#gnb::after {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 80px;
+  left: 0;
+  transition: height 0.5s ease-in-out, background-color 0.3s;
+}
+/* 버튼 */
+.icons {
+  width: fit-content;
+  height: 25px;
+  display: flex;
+  gap: 30px;
+}
+.icons > button {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.xi-search,
+.xi-user-o {
+  color: #333;
+  font-size: 25px;
+}
+/* 헤더 호버 */
+#gnb:hover::after {
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #ddd;
+}
+#gnb > ul > li > a:hover {
+  color: #587d00;
+}
+.submenu > li > a:hover {
+  color: #587d00;
+}
+#gnb > ul > li > a:hover:before,
+#gnb > ul > li > a:focus:before {
+  color: #333;
+  text-shadow: 10px 0 #333, -10px 0 #333;
+}
+/* main */
+main {
+  margin-top: 80px;
+}
+.content > h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #587d00;
+  margin-top: 120px;
+}
+.content > h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 48px;
+}
+.sec1 {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+/* 왼쪽 회원 정보 */
+.left_info {
+  display: flex;
+}
+.profile {
+  display: flex;
+  align-items: end;
+  gap: 35px;
+}
+.profile_img {
+  position: relative;
+}
+.clause {
+  font-size: 16px;
+  font-weight: 500;
+  color: #999;
+  margin-left: 50px;
+}
+.clause ul li {
+  margin-bottom: 16px;
+}
+.detail {
+  font-size: 16px;
+  font-weight: 500;
+}
+.detail ul li {
+  margin-bottom: 16px;
+}
+.icon {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 16px;
+  right: 24px;
+  cursor: pointer;
+}
+.left_info > a {
+  font-size: 13px;
+  color: #999;
+  text-decoration: underline;
+}
+/* 오른쪽 추천 카드 */
+.right_info > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.right_info > h4 span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #587d00;
+}
+.card {
+  display: flex;
+  width: 728px;
+  height: 228px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+.card_detail {
+  margin: 22px 36px;
+}
+.card_detail > span {
+  font-size: 14px;
+  color: #587d00;
+}
+.card_detail h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 70px 0 24px 0;
+}
+.card_detail div {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.more_view a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999;
+  position: absolute;
+  top: 24px;
+  right: 40px;
+}
+.more_view a:hover {
+  color: #587d00;
+}
+/* 최근 본 전시, 내가 찜한 전시 */
+.sec2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.sec2 h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 48px;
+}
+.scroll {
+  width: 728px;
+  height: 760px;
+  overflow-x: none;
+  overflow-y: scroll;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 35px 40px;
+  box-sizing: border-box;
+}
+.exhibition {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.exhibition:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.ex_title h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 37px;
+}
+.ex_title div {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+/* 리뷰 */
+.sec3 {
+  margin: 100px 0;
+}
+.sec3 h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.list_up {
+  display: flex;
+  justify-content: space-between;
+}
+.list_up button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #666;
+}
+.list_up button:focus {
+  color: #333;
+}
+.review h5 {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 48px 0 32px 0;
+}
+.review p {
+  line-height: 30px;
+  font-size: 15px;
+  transition: max-height 0.3s ease-out;
+}
+.review_img {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.review_img img {
+  width: 122px;
+}
+.more {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 15px;
+}
+.more button {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  padding: 0;
+}
+.review {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 32px;
+}
+.review:last-child {
+  border-bottom: none;
+}
+/* footer */
+footer {
+  width: 100%;
+  height: 225px;
+  background-color: #f8f8f8;
+}
+footer > .content {
+  width: 1600px;
+  height: 225px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+footer > .content img {
+  margin-right: 55px;
+}
+.footer_text p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+}
+.footer_text a {
+  color: #666;
+  text-decoration: underline;
+}
+.right_icons > ul {
+  width: 283px;
+  display: flex;
+  gap: 20px;
+}
+.right_icons > ul > li {
+  width: 46px;
+}
+.right_icons > ul > li img {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+}
+.right_icons {
+  margin-left: auto;
+}

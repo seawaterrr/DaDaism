@@ -24,3 +24,10 @@ userId.addEventListener("input", updateButtonState);
 userPw.addEventListener("input", updateButtonState);
 
 updateButtonState();
+
+// ✅ 로그인 버튼 클릭 시 페이지 이동
+loginBtn.addEventListener("click", function () {
+  if (!loginBtn.disabled) {
+    window.location.href = "./mypage.html";
+  }
+});
