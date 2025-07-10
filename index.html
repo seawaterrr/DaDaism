@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png" />
   <!-- css -->
   <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/responsive/layout.css">
   <!-- gsap CDN -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
@@ -53,6 +54,12 @@
           <button type="button">
             <a href="./login.html"><i class="xi-user-o"></i></a>
           </button>
+          <input id="toggle" type="checkbox" />
+          <label class="hamburger" for="toggle">
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="bottom"></div>
+          </label>
         </div>
       </div>
     </header>
@@ -143,13 +150,13 @@
                 <img src="/img/main_img/poster3.png" alt="초현실주의와한국근대미술" />
               </div>
             </a>
-            <a href="./detail.html">
-              <div class="box">
+            <a href="./detail.html" class="hide_box">
+              <div class="box hide_box">
                 <img src="/img/main_img/poster4.png" alt="창작의순간" />
               </div>
             </a>
-            <a href="./detail.html">
-              <div class="box">
+            <a href="./detail.html" class="hide_box">
+              <div class="box hide_box">
                 <img src="/img/main_img/poster5.png" alt="중첩과투영" />
               </div>
             </a>
@@ -159,36 +166,36 @@
               <a href="./detail.html">
                 <h4>론 뮤익 개인전</h4>
               </a>
-              <div class="date2">2025.04.11~2025.07.13</div>
-              <div class="place2">국립현대미술관 서울</div>
+              <div><i class="xi-calendar"></i> 2025.04.11~2025.07.13</div>
+              <div><i class="xi-maker"></i> 국립현대미술관 서울</div>
             </div>
             <div class="detail">
               <a href="./detail.html">
                 <h4>젊은 모색 2025 : 지금, 여기</h4>
               </a>
-              <div class="date2">2025.04.04~2025.10.12</div>
-              <div class="place2">국립현대미술관 과천</div>
+              <div><i class="xi-calendar"></i> 2025.04.04~2025.10.12</div>
+              <div><i class="xi-maker"></i> 국립현대미술관 과천</div>
             </div>
             <div class="detail">
               <a href="./detail.html">
                 <h4>초현실주의와 한국근대미술</h4>
               </a>
-              <div class="date2">2025.04.17~2025.07.06</div>
-              <div class="place2">국립현대미술관 덕수궁</div>
+              <div><i class="xi-calendar"></i> 2025.04.17~2025.07.06</div>
+              <div><i class="xi-maker"></i> 국립현대미술관 덕수궁</div>
             </div>
-            <div class="detail">
+            <div class="detail hide_box">
               <a href="./detail.html">
                 <h4>창작의 순간 • 예술가의 작업실</h4>
               </a>
-              <div class="date2">2025.02.14~2025.05.24</div>
-              <div class="place2">국립현대미술관 서울</div>
+              <div><i class="xi-calendar"></i> 2025.02.14~2025.05.24</div>
+              <div><i class="xi-maker"></i> 국립현대미술관 서울</div>
             </div>
-            <div class="detail">
+            <div class="detail hide_box">
               <a href="./detail.html">
                 <h4>이주헌 : 중첩과 투영</h4>
               </a>
-              <div class="date2">2025.05.06~2025.05.11</div>
-              <div class="place2">하랑갤러리</div>
+              <div><i class="xi-calendar"></i> 2025.05.06~2025.05.11</div>
+              <div><i class="xi-maker"></i> 하랑갤러리</div>
             </div>
           </div>
         </div>
@@ -199,7 +206,7 @@
           <div class="title2">
             <h3>유형별 인기 전시</h3>
             <button type="button">
-              <img src="./img/main_icon/refresh-cw.png" alt="새로고침" />
+              <i class="xi-refresh"></i>
             </button>
           </div>
           <div class="sec3_con">
@@ -213,8 +220,8 @@
                   <h4>인상파, 모네에서 미국으로 : 빛, 바다를 건너다</h4>
                 </a>
                 <div class="info">
-                  <div class="date2">2025.02.15~2025.05.26</div>
-                  <div class="place2">더현대 서울 ALT.1</div>
+                  <div><i class="xi-calendar"></i> 2025.02.15~2025.05.26</div>
+                  <div><i class="xi-maker"></i> 더현대 서울 ALT.1</div>
                 </div>
               </div>
               <div class="graph">
@@ -248,6 +255,7 @@
                       <div class="bar initial-bar" data-width="45"></div>
                     </div>
                   </div>
+                  <a href="./detail.html">전시 정보 보러가기&nbsp;&nbsp;<i class="xi-angle-right"></i></a>
                 </div>
               </div>
             </div>
@@ -263,8 +271,8 @@
                   <h4>도쿄卍리벤저스展</h4>
                 </a>
                 <div class="info">
-                  <div class="date2">2025.03.29~2025.06.29</div>
-                  <div class="place2">덕스(DUEX) 홍대</div>
+                  <div><i class="xi-calendar"></i> 2025.03.29~2025.06.29</div>
+                  <div><i class="xi-maker"></i> 덕스(DUEX) 홍대</div>
                 </div>
               </div>
               <div class="graph">
@@ -298,6 +306,7 @@
                       <div class="bar initial-bar" data-width="45"></div>
                     </div>
                   </div>
+                  <a href="./detail.html">전시 정보 보러가기&nbsp;&nbsp;<i class="xi-angle-right"></i></a>
                 </div>
               </div>
             </div>
@@ -313,8 +322,8 @@
                   <h4>제이홉 전시 ‘AND WHAT？’</h4>
                 </a>
                 <div class="info">
-                  <div class="date2">2025.05.30~2025.06.22</div>
-                  <div class="place2">AK플라자 홍대점</div>
+                  <div><i class="xi-calendar"></i> 2025.05.30~2025.06.22</div>
+                  <div><i class="xi-maker"></i> AK플라자 홍대점</div>
                 </div>
               </div>
               <div class="graph">
@@ -348,6 +357,7 @@
                       <div class="bar initial-bar" data-width="52"></div>
                     </div>
                   </div>
+                  <a href="./detail.html">전시 정보 보러가기&nbsp;&nbsp;<i class="xi-angle-right"></i></a>
                 </div>
               </div>
             </div>
@@ -363,8 +373,8 @@
                   <h4>론뮤익 개인전</h4>
                 </a>
                 <div class="info">
-                  <div class="date2">2025.05.30~2025.06.22</div>
-                  <div class="place2">국립현대미술관 서울</div>
+                  <div><i class="xi-calendar"></i> 2025.05.30~2025.06.22</div>
+                  <div><i class="xi-maker"></i> 국립현대미술관 서울</div>
                 </div>
               </div>
               <div class="graph">
@@ -397,6 +407,7 @@
                       <div class="bar initial-bar" data-width="98"></div>
                     </div>
                   </div>
+                  <a href="./detail.html">전시 정보 보러가기&nbsp;&nbsp;<i class="xi-angle-right"></i></a>
                 </div>
               </div>
             </div>
@@ -425,19 +436,19 @@
                   <a href="./detail.html">
                     <h4>MACHINE LOVE : Video...</h4>
                   </a>
-                  <div class="place2">모리아트뮤지엄, 도쿄</div>
+                  <div><i class="xi-maker"></i> 모리아트뮤지엄, 도쿄</div>
                 </div>
                 <div class="detail">
                   <a href="./detail.html">
                     <h4>Caspar David Friedri...</h4>
                   </a>
-                  <div class="place2">메트로폴리탄 미술관, 맨해튼</div>
+                  <div><i class="xi-maker"></i> 메트로폴리탄 미술관, 맨해튼</div>
                 </div>
                 <div class="detail">
                   <a href="./detail.html">
                     <h4>Formafantasma Oltre...</h4>
                   </a>
-                  <div class="place2">암스테르담 시립 미술관, 네덜란드</div>
+                  <div><i class="xi-maker"></i> 암스테르담 시립 미술관, 네덜란드</div>
                 </div>
               </div>
             </div>
@@ -459,19 +470,19 @@
                   <a href="./detail.html">
                     <h4>서울百화점 - Local to Seoul...</h4>
                   </a>
-                  <div class="place2">문화역서울284</div>
+                  <div><i class="xi-maker"></i> 문화역서울284</div>
                 </div>
                 <div class="detail">
                   <a href="./detail.html">
                     <h4>레픽아나돌 : Machine Simul...</h4>
                   </a>
-                  <div class="place2">63빌딩</div>
+                  <div><i class="xi-maker"></i> 63빌딩</div>
                 </div>
                 <div class="detail">
                   <a href="./detail.html">
                     <h4>이주헌 : 중첩과 투영</h4>
                   </a>
-                  <div class="place2">하랑갤러리</div>
+                  <div><i class="xi-maker"></i> 하랑갤러리</div>
                 </div>
               </div>
             </div>
@@ -588,7 +599,7 @@
               <a href="../detail.html"><img src="/img/main_img/poster13.png" alt="론뮤익개인전" /></a>
               <div class="review_text">
                 <p>극사실주의 조각작품의 거장 론 뮤익의 <br>
-                  전시를 한국에서 보게 될 줄이야! 정...
+                  전시를 한국에서 보게 될 줄이야! 정말 실제로 보니까 더 대단하더라구요.
                 </p>
                 <span>2025.05.18</span>
                 <span>김*희</span>
@@ -598,7 +609,7 @@
               <a href="../detail.html"><img src="/img/main_img/poster14.png" alt="도쿄리벤저스전" /></a>
               <div class="review_text">
                 <p>일본에서 하는 것 보고 진짜 가고 싶었는 <br>
-                  데 한국에서도 하다니 바로 달려갔습...
+                  데 한국에서도 하다니 바로 달려갔습니다. 역시 원화 그림체가 더 취향이었어요.
                 </p>
                 <span>2025.05.14</span>
                 <span>변*주</span>
@@ -608,27 +619,27 @@
               <a href="../detail.html"><img src="/img/main_img/poster15.png" alt="모네에서앤디워홀까지" /></a>
               <div class="review_text">
                 <p>저 모네 그림 덕후인데요. 진짜 실제로 보 <br>
-                  니까 너무 아름답고 황홀하네요. 모네...
+                  니까 너무 아름답고 황홀하네요. 모네의 대표작인 수련부터 다양하게 많이 있어요.
                 </p>
                 <span>2025.05.02</span>
                 <span>조*연</span>
               </div>
             </div>
-            <div class="review_imgs">
+            <div class="review_imgs hide_box">
               <a href="../detail.html"><img src="/img/main_img/poster16.png" alt="문도픽사상상의세계로" /></a>
               <div class="review_text">
                 <p>완전 동심으로 돌아간 것 같아요. 저의 <br>
-                  인생 영화가 토이스토인데 그 안에...
+                  인생 영화가 토이스토인데 그 안에 들어가 있는 듯한 기분이었습니다. 우디가되...
                 </p>
                 <span>2025.04.28</span>
                 <span>나*유</span>
               </div>
             </div>
-            <div class="review_imgs">
+            <div class="review_imgs hide_box">
               <a href="../detail.html"><img src="/img/main_img/poster14.png" alt="도쿄리벤저스전" /></a>
               <div class="review_text">
                 <p>안녕하세요. 도쿄만지회 1번대 부원입니 <br>
-                  다. 대장님과 부대장님을 뵙게 되어 진...
+                  다. 대장님과 부대장님을 뵙게 되어 진심으로 영광이었습니다.
                 </p>
                 <span>2025.04.19</span>
                 <span>전*진</span>
@@ -640,36 +651,36 @@
               <a href="../detail.html">
                 <h4>론 뮤익 개인전</h4>
               </a>
-              <div class="date2">2025.04.11~2025.07.13</div>
-              <div class="place2">국립현대미술관 서울</div>
+              <div><i class="xi-calendar"></i> 2025.04.11~2025.07.13</div>
+              <div><i class="xi-maker"></i> 국립현대미술관 서울</div>
             </div>
             <div class="detail2">
               <a href="../detail.html">
                 <h4>도쿄卍리벤저스展</h4>
               </a>
-              <div class="date2">2025.03.29~2025.06.29</div>
-              <div class="place2">덕스(DUEX) 홍대 1관</div>
+              <div><i class="xi-calendar"></i> 2025.03.29~2025.06.29</div>
+              <div><i class="xi-maker"></i> 덕스(DUEX) 홍대 1관</div>
             </div>
             <div class="detail2">
               <a href="../detail.html">
                 <h4>모네에서 앤디워홀까지</h4>
               </a>
-              <div class="date2">2025.05.16~2025.06.30</div>
-              <div class="place2">세종문화회관 미술관</div>
+              <div><i class="xi-calendar"></i> 2025.05.16~2025.06.30</div>
+              <div><i class="xi-maker"></i> 세종문화회관 미술관</div>
             </div>
-            <div class="detail2">
+            <div class="detail2 hide_box">
               <a href="../detail.html">
                 <h4>문도 픽사 : 픽사, 상상의 세계로</h4>
               </a>
-              <div class="date2">2025.05.05~2025.06.29</div>
-              <div class="place2">성수문화예술마당</div>
+              <div><i class="xi-calendar"></i> 2025.05.05~2025.06.29</div>
+              <div><i class="xi-maker"></i> 성수문화예술마당</div>
             </div>
-            <div class="detail2">
+            <div class="detail2 hide_box">
               <a href="../detail.html">
                 <h4>도쿄卍리벤저스展</h4>
               </a>
-              <div class="date2">2025.03.29~2025.06.29</div>
-              <div class="place2">덕스(DUEX) 홍대 1관</div>
+              <div><i class="xi-calendar"></i> 2025.03.29~2025.06.29</div>
+              <div><i class="xi-maker"></i> 덕스(DUEX) 홍대 1관</div>
             </div>
           </div>
       </section>

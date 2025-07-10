@@ -141,6 +141,12 @@ h1 img {
   color: #fff;
   font-size: 25px;
 }
+.icons input {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
 /* 헤더 호버 */
 header:hover {
   background-color: #ffffff;
@@ -179,7 +185,6 @@ header:hover {
   font-weight: bold;
   color: rgba(255, 255, 255, 0.8);
 }
-
 .autoplay-progress svg {
   --progress: 0;
   position: absolute;
@@ -222,19 +227,13 @@ header:hover {
   background: url(../img/main_img/main_img3.png) no-repeat;
   background-attachment: fixed;
 }
-.main_img1 .title_text,
-.main_img2 .title_text,
-.main_img3 .title_text {
+.title_text {
+  width: 1589px;
+  height: 697px;
   position: absolute;
   top: 200px;
   left: 160px;
 }
-
-.title_text {
-  width: 1589px;
-  height: 697px;
-}
-
 .title_text h2 {
   text-align: left;
   color: #fff;
@@ -242,7 +241,6 @@ header:hover {
   font-weight: 700;
   margin-bottom: 27px;
 }
-
 .title_text h4 {
   text-align: left;
   color: #fff;
@@ -250,11 +248,9 @@ header:hover {
   font-weight: 500;
   margin-bottom: 15px;
 }
-
 .title_text2 {
   display: flex;
 }
-
 .title_text2 p {
   text-align: left;
   color: #fff;
@@ -268,14 +264,11 @@ header:hover {
   margin-top: 130px;
   margin-bottom: 170px;
 }
-h3 {
-  font-size: 24px;
-  font-weight: 500;
-}
 .content h3 {
   font-size: 24px;
   font-family: 500;
   margin-bottom: 40px;
+  font-weight: 500;
 }
 .posters {
   width: 1592px;
@@ -311,27 +304,15 @@ h3 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
+  width: 272px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .detail div {
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 15px;
-}
-.date2::before {
-  content: "";
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background: url(../img/main_icon/calendar2.png) no-repeat;
-  margin-right: 3px;
-}
-.place2::before {
-  content: "";
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background: url(../img/main_icon/map-pin2.png) no-repeat;
-  margin-right: 3px;
 }
 /* 세번째 섹션 */
 .sec3 {
@@ -341,12 +322,11 @@ h3 {
   display: flex;
 }
 .title2 button {
-  width: 25px;
-  height: 25px;
+  width: fit-content;
+  height: fit-content;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  margin-left: 8px;
   opacity: 0.8;
 }
 .sec3_con {
@@ -377,7 +357,6 @@ h3 {
 .info {
   display: flex;
   gap: 20px;
-  margin-left: 4px;
 }
 .graph h4 {
   font-size: 24px;
@@ -452,6 +431,9 @@ h3 {
 .ages h4:nth-child(2) {
   font-weight: bold;
   color: #587d00;
+}
+.charts a {
+  display: none;
 }
 /* 네번째섹션 */
 .sec4 {
@@ -581,7 +563,8 @@ h3 {
   position: relative;
 }
 .review_text {
-  width: 280px;
+  width: 230px;
+  height: 222px;
   position: absolute;
   transform: translateY(-115px) translateX(30px);
   line-height: 1.5;
@@ -589,7 +572,11 @@ h3 {
   color: #fff;
 }
 .review_text > p {
+  width: 230px;
   margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .review_text > span:last-of-type {
   margin-left: 120px;
@@ -613,6 +600,10 @@ h3 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
+  width: 272px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .detail2 div {
   font-size: 15px;
