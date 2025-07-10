@@ -3,248 +3,221 @@
 /* 모바일~큰모바일 */
 @media screen and (min-width: 320px) and (max-width: 479px) {
   header {
-    height: 50px;
+    height: 3.125rem;
   }
   .con {
-    height: 50px;
-    width: 419px;
+    height: 3.125rem;
+    width: 87.3vw;
   }
   h1 {
-    width: 83px;
-    height: 16.47px;
+    width: 17.3vw;
+    height: 1.03rem;
   }
   h1 img {
-    width: 83px;
+    width: 17.3vw;
     filter: none;
   }
   #gnb {
     display: none;
   }
   .icons {
-    gap: 10px;
+    gap: 0.625rem;
   }
   .xi-search,
   .xi-user-o {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #333;
   }
   .hamburger {
-    height: 45px;
+    height: 2.8125rem;
     display: grid;
-    grid-template-rows: repeat(3, 5px);
+    grid-template-rows: repeat(3, 0.3125rem);
     justify-items: center;
-    margin-top: 5px;
+    margin-top: 0.3125rem;
   }
-
   .hamburger div {
     background-color: #333;
     position: relative;
-    width: 15px;
-    height: 2px;
+    width: 3.125vw;
+    height: 0.125rem;
     transition: all 0.2s ease-in-out;
   }
-
   #toggle {
     display: none;
   }
-
   #toggle:checked + .hamburger .top {
     transform: rotate(45deg);
-    margin-top: 6px;
+    margin-top: 1.25vw;
   }
-
   #toggle:checked + .hamburger .middle {
     transform: rotate(-45deg);
-    margin-top: 1px;
+    margin-top: 0.208vw;
   }
-
   #toggle:checked + .hamburger .bottom {
     transform: scale(0);
   }
   main {
-    margin-top: 50px;
+    margin-top: 3.125rem;
   }
-  .main_img1 {
-    margin: 0 auto;
-    position: relative;
-    font-family: "Noto Sans KR", sans-serif;
-    width: 419px;
-    height: 332px;
-    background: url(../../img/main_img/main_img479.png) no-repeat;
-    background-attachment: fixed;
-  }
-  .main_img2 {
-    margin: 0 auto;
-    position: relative;
-    font-family: "Noto Sans KR", sans-serif;
-    width: 419px;
-    height: 332px;
-    background: url(../../img/main_img/main_img2479.png) no-repeat;
-    background-attachment: fixed;
-  }
+  .main_img1,
+  .main_img2,
   .main_img3 {
     margin: 0 auto;
     position: relative;
     font-family: "Noto Sans KR", sans-serif;
-    width: 419px;
-    height: 332px;
-    background: url(../../img/main_img/main_img3479.png) no-repeat;
+    width: 87.3vw;
+    height: 69.2vw;
+    background-size: cover;
     background-attachment: fixed;
+  }
+  .main_img1 {
+    background-image: url(../../img/main_img/main_img479.png);
+  }
+  .main_img2 {
+    background-image: url(../../img/main_img/main_img2479.png);
+  }
+  .main_img3 {
+    background-image: url(../../img/main_img/main_img3479.png);
   }
   .autoplay-progress {
     display: none;
   }
   .title_text {
     position: absolute;
-    width: 270px;
-    height: 247px;
-    top: 43px;
-    left: 44px;
+    width: 56.25vw;
+    height: 51.45vw;
+    top: 8.95vw;
+    left: 9.16vw;
   }
   .title_text h2 {
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 0.875rem;
+    margin-bottom: 0.625rem;
   }
   .title_text h4 {
-    font-size: 7px;
-    margin-bottom: 7px;
+    font-size: 0.4375rem;
+    margin-bottom: 0.4375rem;
   }
   .title_text2 p {
-    font-size: 7px;
-    line-height: 15px;
-    margin-top: 150px;
+    font-size: 0.4375rem;
+    line-height: 0.9375rem;
+    margin-top: 31.25vw;
   }
   .content {
-    width: 419px;
+    width: 87.3vw;
     margin: 0 auto;
-  }
-  /* 두번째 섹션 */
-  .sec2 {
-    margin-top: 38px;
-    margin-bottom: 40px;
-  }
-  .content h3 {
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 23px;
-  }
-  .box {
-    margin: 0;
-    padding: 0;
-    width: 126px;
-    height: 178px;
-  }
-  .box img {
-    width: 126px;
-  }
-  .posters {
-    width: 419px;
   }
   .hide_box {
     display: none;
   }
+  /* 두번째 섹션 */
+  .sec2 {
+    margin: 7.9vw 0 8.3vw;
+  }
+  .content h3 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 1.4375rem;
+  }
+  .box {
+    margin: 0;
+    padding: 0;
+    width: 26.25vw;
+    height: 37.08vw;
+  }
+  .box img {
+    width: 100%;
+  }
+  .posters,
   .titles {
-    width: 419px;
-    margin-top: 8px;
+    width: 87.3vw;
+  }
+  .titles {
+    margin-top: 1.67vw;
   }
   .detail {
-    width: 124px;
-    height: 43px;
-    margin-left: 2px;
+    width: 25.8vw;
+    height: 8.95vw;
+    margin-left: 0.42vw;
   }
   .detail h4 {
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: 700;
-    margin-bottom: 7px;
-    width: 124px;
+    margin-bottom: 0.4375rem;
+    width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
   .detail div {
-    font-size: 7px;
-    margin-bottom: 3px;
+    font-size: 0.4375rem;
+    margin-bottom: 0.1875rem;
   }
   /* 세번째 섹션 */
   .sec3 {
-    margin-bottom: 40px;
+    margin-bottom: 8.3vw;
   }
   .sec3_con > div > a > img {
-    width: 180px;
+    width: 37.5vw;
   }
   .subtitle {
-    width: 170px;
+    width: 35.4vw;
     height: auto;
     border: none;
   }
   .subtitle > span {
-    width: 64px;
-    height: 10px;
-    font-size: 6px;
-    line-height: 10px;
+    width: 13.3vw;
+    height: 2.08vw;
+    font-size: 0.375rem;
+    line-height: 0.625rem;
   }
   .sec3_con {
-    gap: 40px;
+    gap: 8.3vw;
   }
   .xi-refresh {
-    line-height: 0px;
+    line-height: 0;
   }
   .subtitle h4 {
-    font-size: 12px;
-    margin: 10px 0 5px 0;
+    font-size: 0.75rem;
+    margin: 0.625rem 0 0.3125rem 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
   .info {
-    font-size: 7px;
-    gap: 5px;
+    font-size: 0.4375rem;
+    gap: 0.3125rem;
   }
   .graph h4 {
-    font-size: 12px;
-    margin: 28px 0 16px 0;
+    font-size: 0.75rem;
+    margin: 5.83vw 0 3.33vw;
   }
   .charts {
-    width: 175px;
+    width: 37.45vw;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 4.17vw;
   }
   .chart {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 20.83vw;
+    height: 20.83vw;
     border-radius: 50%;
     transition: 0.3s;
     display: inline-block;
   }
   .chart:after {
-    width: 50px;
-    height: 50px;
+    width: 10.41vw;
+    height: 10.41vw;
   }
   .cir_text h3:first-child {
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
   .cir_text h3 {
-    font-size: 10px;
-    margin-bottom: 10px;
+    font-size: 0.625rem;
+    margin-bottom: 0.625rem;
   }
   .circle {
-    gap: 20px;
-  }
-  .bar.initial-bar {
-    height: 7px;
-    margin-bottom: 10px;
-  }
-  .bars {
-    gap: 13px;
-  }
-  .ages {
-    width: 33px;
-  }
-  .ages h4 {
-    font-size: 8px;
-    margin-bottom: 10px;
+    gap: 4.17vw;
   }
   .bars,
   .bar.initial-bar {
@@ -253,155 +226,152 @@
   .charts a {
     display: block;
     color: #666;
-    font-size: 8px;
-    margin-top: 24px;
+    font-size: 0.5rem;
+    margin-top: 5vw;
     text-align: right;
   }
   /* 네번째 섹션 */
   .sec4 {
-    margin-bottom: 40px;
+    margin-bottom: 8.3vw;
   }
   .box2 {
-    width: 126px;
-    height: 178px;
+    width: 26.25vw;
+    height: 37.08vw;
   }
   .box2 img {
-    width: 126px;
+    width: 100%;
   }
-  .sec4_poster {
-    width: 419px;
-  }
-  .right_text {
-    width: 419px;
+  .sec4_poster,
+  .right_text,
+  .titles2 {
+    width: 87.3vw;
   }
   .sec4_con .detail {
-    width: 126px;
-    margin-top: 8px;
+    width: 26.25vw;
+    margin-top: 1.67vw;
   }
   .right_text > .detail h4 {
-    font-size: 11px;
+    font-size: 0.6875rem;
   }
   .sec4_left {
     display: none;
   }
   /* 다섯번째 섹션 */
   .sec5 {
-    margin-bottom: 40px;
+    margin-bottom: 8.3vw;
   }
   .right_rank {
     display: none;
   }
   .rank_1 {
-    width: 419px;
-    height: 70px;
-    margin-bottom: 16px;
+    width: 87.3vw;
+    height: 14.58vw;
+    margin-bottom: 3.33vw;
   }
   .rank_1 h2 {
-    font-size: 12px;
-    margin-right: 42px;
-    margin-left: 35px;
+    font-size: 0.75rem;
+    margin-right: 8.75vw;
+    margin-left: 7.3vw;
   }
   .rank_1 img {
-    width: 46px;
+    width: 9.58vw;
   }
   .rank_1 h4 {
-    font-size: 10px;
-    margin-left: 26px;
+    font-size: 0.625rem;
+    margin-left: 5.42vw;
   }
   .rank {
-    height: 29px;
-    margin-bottom: 10px;
+    height: 6.04vw;
+    margin-bottom: 2.08vw;
   }
   .rank h2 {
-    font-size: 10px;
-    margin-left: 35px;
-    margin-right: 42px;
+    font-size: 0.625rem;
+    margin-left: 7.3vw;
+    margin-right: 8.75vw;
   }
   .rank h4 {
-    font-size: 7px;
-    margin-left: 27px;
+    font-size: 0.4375rem;
+    margin-left: 5.62vw;
   }
   .rank img {
-    width: 29px;
+    width: 6.04vw;
   }
-  .rank_1:hover {
-    transform: translateY(-5px);
-  }
+  .rank_1:hover,
   .rank:hover {
-    transform: translateY(-5px);
+    transform: translateY(-1.04vw);
   }
   /* 여섯번째 섹션 */
   .sec6 {
-    margin-bottom: 50px;
+    margin-bottom: 10.4vw;
   }
   .posters2 {
-    width: 419px;
+    width: 87.3vw;
   }
   .posters2 img {
-    width: 126px;
+    width: 26.25vw;
   }
   .review_text {
-    width: 280px;
+    width: 58.3vw;
     position: absolute;
-    transform: translateY(-54px) translateX(16px);
+    transform: translateY(-11.25vw) translateX(3.33vw);
     line-height: 1.5;
-    font-size: 6px;
+    font-size: 0.375rem;
     color: #fff;
   }
   .review_text > p {
-    width: 100px;
-    margin-bottom: 10px;
+    width: 20.83vw;
+    margin-bottom: 0.625rem;
   }
   .review_text > span:last-of-type {
-    margin-left: 50px;
+    margin-left: 10.4vw;
   }
   .titles2 {
-    width: 419px;
-    margin-top: 8px;
+    margin-top: 1.67vw;
   }
   .detail2 {
-    width: 124px;
-    height: 43px;
-    margin-left: 2px;
+    width: 25.8vw;
+    height: 8.95vw;
+    margin-left: 0.42vw;
   }
   .detail2 h4 {
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: 700;
-    margin-bottom: 7px;
-    width: 124px;
+    margin-bottom: 0.4375rem;
+    width: 100%;
   }
   .detail2 div {
-    font-size: 7px;
-    margin-bottom: 3px;
+    font-size: 0.4375rem;
+    margin-bottom: 0.1875rem;
   }
+  /* footer */
   footer {
-    height: 120px;
+    height: 7.5rem;
   }
   footer > .content img {
-    width: 45px;
-    margin-right: 30px;
+    width: 9.38vw;
+    margin-right: 6.25vw;
   }
   footer > .content {
-    width: 419px;
-    height: 120px;
+    width: 87.3vw;
+    height: 7.5rem;
   }
   .footer_text p {
-    font-size: 6px;
-    margin-bottom: 3px;
+    font-size: 0.375rem;
+    margin-bottom: 0.1875rem;
   }
   .footer_text a {
     text-decoration: none;
   }
   .right_icons > ul {
-    width: 87px;
+    width: 18.1vw;
     display: flex;
-    gap: 8px;
+    gap: 1.67vw;
   }
   .right_icons > ul > li {
-    width: 16px;
+    width: 3.33vw;
   }
   .right_icons > ul > li img {
-    width: 15px;
-    height: 15px;
+    width: 3.13vw;
+    height: 3.13vw;
   }
 }
