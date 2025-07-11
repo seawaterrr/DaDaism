@@ -184,7 +184,7 @@
     text-overflow: ellipsis;
   }
   .info {
-    font-size: 0.4375rem;
+    font-size: 0.3375rem;
     gap: 0.3125rem;
   }
   .graph h4 {
@@ -213,7 +213,7 @@
     margin-top: 0.625rem;
   }
   .cir_text h3 {
-    font-size: 0.625rem;
+    font-size: 0.525rem;
     margin-bottom: 0.625rem;
   }
   .circle {
@@ -277,7 +277,7 @@
     width: 9.58vw;
   }
   .rank_1 h4 {
-    font-size: 0.625rem;
+    font-size: 0.725rem;
     margin-left: 5.42vw;
   }
   .rank {
