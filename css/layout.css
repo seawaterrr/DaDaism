@@ -86,7 +86,7 @@ h1 img {
 .submenu {
   width: 100%;
   height: 0px;
-  line-height: var(--md-line-height);
+  line-height: 1.5;
   position: absolute;
   top: 100px;
   z-index: 500;
@@ -135,6 +135,7 @@ h1 img {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  color: #333;
 }
 .xi-search,
 .xi-user-o {
@@ -329,6 +330,9 @@ header:hover {
   cursor: pointer;
   opacity: 0.8;
 }
+button > i {
+  font-size: 25px;
+}
 .sec3_con {
   display: flex;
   gap: 115px;
@@ -435,6 +439,9 @@ header:hover {
 .charts a {
   display: none;
 }
+.percent {
+  display: none;
+}
 /* 네번째섹션 */
 .sec4 {
   margin-bottom: 170px;
@@ -472,6 +479,12 @@ header:hover {
 .sec4_con .detail h4 {
   font-size: 17px;
   font-weight: 500;
+}
+.sec4 .detail div {
+  width: 230.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .box2 {
   width: 230.2px;
@@ -547,7 +560,6 @@ header:hover {
   width: 24px;
   height: 24px;
   opacity: 0.8;
-  background: url(../img/main_icon/crosshair.png) no-repeat;
 }
 /* 여섯번째섹션 */
 .sec6 {
@@ -574,9 +586,12 @@ header:hover {
 .review_text > p {
   width: 230px;
   margin-bottom: 20px;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .review_text > span:last-of-type {
   margin-left: 120px;
@@ -639,6 +654,7 @@ footer > .content img {
 .right_icons > ul {
   width: 283px;
   display: flex;
+  justify-content: end;
   gap: 20px;
 }
 .right_icons > ul > li {
