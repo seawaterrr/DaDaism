@@ -16,31 +16,23 @@ tabItem.forEach((item, index) => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  // --- Tab Switching Logic ---
   const tabItems = document.querySelectorAll(".tab__item");
   const tabContents = document.querySelectorAll(".tab__content");
 
   tabItems.forEach((item) => {
     item.addEventListener("click", function (event) {
-      event.preventDefault(); // Prevent default anchor link behavior
+      event.preventDefault();
 
-      // Remove 'active' from all tab items and contents
       tabItems.forEach((i) => i.classList.remove("active"));
       tabContents.forEach((c) => c.classList.remove("active"));
 
-      // Add 'active' to the clicked tab item
       this.classList.add("active");
 
-      // Show the corresponding tab content
       const targetId = this.querySelector("a").getAttribute("href");
       document.querySelector(targetId).classList.add("active");
 
-      // --- Handle city selections based on active tab ---
       if (targetId === "#tab1") {
-        // Domestic tab
-        // Hide overseas sections when switching to domestic
         hideAllOverseasSections();
-        // Trigger click on the default domestic city (e.g., Seoul)
         const defaultDomesticCityButton = document.querySelector(
           "#tab1 .choice .location button:first-child"
         );
@@ -48,10 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
           defaultDomesticCityButton.click();
         }
       } else if (targetId === "#tab2") {
-        // Overseas tab
-        // Hide domestic sections when switching to overseas
         hideAllDomesticSections();
-        // Trigger click on the default overseas city (e.g., Japan)
         const defaultOverseasCityButton = document.querySelector(
           "#tab2 .choice .location button:first-child"
         );
