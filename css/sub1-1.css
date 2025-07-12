@@ -137,6 +137,9 @@ h1 {
   color: #333;
   font-size: 25px;
 }
+.icons input {
+  display: none;
+}
 /* 헤더 호버 */
 #gnb:hover::after {
   height: 200px;
@@ -287,6 +290,7 @@ h2 {
   transform: scale(1);
 }
 .box img:hover {
+  width: 100%;
   transform: scale(1.02);
   transition: 0.3s linear;
 }

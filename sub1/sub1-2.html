@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
   <!-- 파비콘 -->
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png" />
+  <!-- css -->
   <link rel="stylesheet" href="../css/sub1-2.css">
+  <link rel="stylesheet" href="../css/responsive/sub1-2.css">
 </head>
 
 <body>
@@ -42,13 +44,19 @@
         </nav>
         <!-- icon -->
         <div class="icons">
-          <button type="button">
-            <i class="xi-search"></i>
-          </button>
-          <button type="button">
-            <a href="./login.html"><i class="xi-user-o"></i></a>
-          </button>
-        </div>
+            <button type="button">
+              <i class="xi-search"></i>
+            </button>
+            <button type="button">
+              <a href="./login.html"><i class="xi-user-o"></i></a>
+            </button>
+            <input id="toggle" type="checkbox" />
+            <label class="hamburger" for="toggle">
+              <div class="top"></div>
+              <div class="middle"></div>
+              <div class="bottom"></div>
+            </label>
+          </div>
       </div>
     </header>
     <!-- 메인 -->
@@ -105,12 +113,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/dore.png" alt="상상해귀스타브도레가만든세계" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/ddpDesign_poster.png" alt="디자인론칭페어" />
                 </div>
               </a>
@@ -137,14 +145,14 @@
                 <div><i class="xi-calendar"></i> 2025.04.30~2025.07.20</div>
                 <div><i class="xi-maker"></i> 서울시립북서울미술관</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>상상해 귀스타브 도레가 만든 세계</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2025.05.02~2025.08.17</div>
                 <div><i class="xi-maker"></i> 국립세계문자박물관</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>DDP 디자인 론칭 페어</h4>
                 </a>
@@ -191,12 +199,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/tree_poster.png" alt="생이깃든소나무" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/starworld_poster.png" alt="그림이라는별세계이건희컬렉션과함께" />
                 </div>
               </a>
@@ -223,14 +231,14 @@
                 <div><i class="xi-calendar"></i> 2025.05.02~2025.08.17</div>
                 <div><i class="xi-maker"></i> 국립세계문자박물관</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>생이 깃든 소나무</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2025.02.26~2025.06.30</div>
                 <div><i class="xi-maker"></i> 성북구립미술관</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>그림이라는 별세계: 이건희컬렉션과 함께</h4>
                 </a>
@@ -255,12 +263,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/ddpDesign_poster.png" alt="디디피디자인론칭페어" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/ourset_poster.png" alt="아워세트" />
                 </div>
               </a>
@@ -287,14 +295,14 @@
                 <div><i class="xi-calendar"></i> 2025.05.22~2025.07.06</div>
                 <div><i class="xi-maker"></i> KT&G상상마당 홍대</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>DDP 디자인 론칭 페어</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2024.10.17~2025.10.27</div>
                 <div><i class="xi-maker"></i> 동대문디자인플라자</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>2025 아워세트 : 김홍석×박길종</h4>
                 </a>
@@ -327,12 +335,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/otherland_poster.png" alt="아더랜드" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/youngKo_poster.png" alt="젊은모색" />
                 </div>
               </a>
@@ -359,14 +367,14 @@
                 <div><i class="xi-calendar"></i> 2025.04.17~2025.07.06</div>
                 <div><i class="xi-maker"></i> 국립현대미술관 덕수궁</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>아더랜드 Ⅱ: 와엘 샤키, 아크람 자타리</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2025.06.03~2025.08.17</div>
                 <div><i class="xi-maker"></i> 국립현대미술관 과천</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>젊은 모색 2025 : 지금, 여기</h4>
                 </a>
@@ -413,12 +421,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/henri_poster.png" alt="색채의마술사앙리마티스" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/water_poster.png" alt="수채물을그리다" />
                 </div>
               </a>
@@ -445,14 +453,14 @@
                 <div><i class="xi-calendar"></i> 2025.05.09~2025.06.15</div>
                 <div><i class="xi-maker"></i> 금호미술관</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>색채의 마술사 앙리 마티스</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2025.07.05~2025.07.27</div>
                 <div><i class="xi-maker"></i> 의정부 예술의전당</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>수채 : 물을 그리다</h4>
                 </a>
@@ -477,12 +485,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/ron_poster.png" alt="론뮤익개인전" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/artist_poster.png" alt="창작의순간" />
                 </div>
               </a>
@@ -509,14 +517,14 @@
                 <div><i class="xi-calendar"></i> 2025.06.03~2025.08.17</div>
                 <div><i class="xi-maker"></i> 국립현대미술관 과천</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>창작의 순간 • 예술가의 작업실</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2025.02.14~2025.05.24</div>
                 <div><i class="xi-maker"></i> 국립현대미술관 서울</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>론 뮤익 개인전</h4>
                 </a>
@@ -549,12 +557,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/michel_poster.png" alt="미셸들라크루아" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/love_poster.png" alt="사랑의단상" />
                 </div>
               </a>
@@ -581,14 +589,14 @@
                 <div><i class="xi-calendar"></i> 2025.05.23~2025.07.31</div>
                 <div><i class="xi-maker"></i> 그라운드 시소 이스트</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>미셸 들라크루아 : 영원히, 화가</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2025.05.24~2025.08.31</div>
                 <div><i class="xi-maker"></i> 현대백화점 무역센터점</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>사랑의 단상</h4>
                 </a>
@@ -635,12 +643,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/keiichi.png" alt="케이이치타나아미" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/hoilday.png" alt="수채물을그리다" />
                 </div>
               </a>
@@ -667,14 +675,14 @@
                 <div><i class="xi-calendar"></i> 2025.06.01~2025.07.31</div>
                 <div><i class="xi-maker"></i> 그라운드 시소 서촌</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>Keiichi Tanaami : I‘M THE ORIGIN</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2025.12.14~2025.06.29</div>
                 <div><i class="xi-maker"></i> 대림미술관</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>엘리자베스 랭그리터 : 매일이 휴가</h4>
                 </a>
@@ -699,12 +707,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/jonathan_poster.png" alt="조나단베르탱" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/herve_poster.png" alt="에르베튈레" />
                 </div>
               </a>
@@ -731,14 +739,14 @@
                 <div><i class="xi-calendar"></i> 2024.11.08~2026.03.22</div>
                 <div><i class="xi-maker"></i> 뚝섬미술관</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>조나단 베르탱 사진전</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2025.05.23~2025.07.31</div>
                 <div><i class="xi-maker"></i> 그라운드 시소 이스트</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>에르베 튈레展 : 색색깔깔 뮤지엄</h4>
                 </a>
@@ -763,12 +771,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/michel_poster.png" alt="미셸들라크루아" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/onestep_poster.png" alt="이경준사진전" />
                 </div>
               </a>
@@ -795,14 +803,14 @@
                 <div><i class="xi-calendar"></i> 2025.05.01~2025.09.07</div>
                 <div><i class="xi-maker"></i> 푸루타서울</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>미셸 들라크루아 : 영원히, 화가</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2025.05.24~2025.08.31</div>
                 <div><i class="xi-maker"></i> 현대백화점 무역센터점</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>이경준 사진전</h4>
                 </a>
@@ -835,12 +843,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/marc_poster.png" alt="마르크샤갈특별전" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/katherine_poster.png" alt="캐서린번하드전" />
                 </div>
               </a>
@@ -867,14 +875,14 @@
                 <div><i class="xi-calendar"></i> 2025.06.06~2025.07.31</div>
                 <div><i class="xi-maker"></i> 그라운드 시소 센트럴</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>마르크 샤갈 특별전 : BEYOND TIME</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2025.05.23~2025.09.21</div>
                 <div><i class="xi-maker"></i> 예술의전당 한가람미술관</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>캐서린 번하드展</h4>
                 </a>
@@ -920,12 +928,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/ghibli_poster.png" alt="아니메쥬와지브리" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/mucha.png" alt="알폰스무하원화전" />
                 </div>
               </a>
@@ -952,14 +960,14 @@
                 <div><i class="xi-calendar"></i> 2025.06.13~2025.08.31</div>
                 <div><i class="xi-maker"></i> 더현대 서울</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>아니메쥬와 지브리展</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2025.06.06~2025.02.22</div>
                 <div><i class="xi-maker"></i> 대원뮤지엄 팝콘D스퀘어</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>알폰스 무하 원화전</h4>
                 </a>
@@ -984,12 +992,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/yosigo_poster.png" alt="요시고사진전" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/browne_poster.png" alt="앤서니브라운" />
                 </div>
               </a>
@@ -1016,14 +1024,14 @@
                 <div><i class="xi-calendar"></i> 2025.06.06~2025.09.28</div>
                 <div><i class="xi-maker"></i> 예술의전당 한가람미술관</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>요시고 사진전 2</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2025.06.06~2025.07.31</div>
                 <div><i class="xi-maker"></i> 그라운드 시소 센트럴</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>앤서니 브라운展: 마스터 오브 스토리텔링</h4>
                 </a>
@@ -1048,12 +1056,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/shinchan_poster.png" alt="짱구페스티벌" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/warhol_poster.png" alt="모네에서앤디워홀까지" />
                 </div>
               </a>
@@ -1080,14 +1088,14 @@
                 <div><i class="xi-calendar"></i> 2025.07.12~2025.10.19</div>
                 <div><i class="xi-maker"></i> 덕스(DUEX) 부산</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>짱구와 함께 떠나는 캠핑 어드벤처展</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2025.06.28~2025.07.31</div>
                 <div><i class="xi-maker"></i> 피아크전시장</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>모네에서 앤디워홀까지</h4>
                 </a>
@@ -1120,12 +1128,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/alex_poster.png" alt="알렉스키토사진전" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/dongtan_poster.png" alt="어둠속의대화동탄" />
                 </div>
               </a>
@@ -1152,14 +1160,14 @@
                 <div><i class="xi-calendar"></i> 2025.05.30~2025.06.22</div>
                 <div><i class="xi-maker"></i> AK플라자 홍대</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>알렉스 키토 사진전</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2025.05.23~2025.07.31</div>
                 <div><i class="xi-maker"></i> 그라운드 시소 이스트</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>[동탄]어둠 속의 대화</h4>
                 </a>
@@ -1205,12 +1213,12 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/alex_poster.png" alt="알렉스키토사진전" />
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/dongtan_poster.png" alt="어둠속의대화동탄" />
                 </div>
               </a>
@@ -1237,14 +1245,14 @@
                 <div><i class="xi-calendar"></i> 2025.05.30~2025.06.22</div>
                 <div><i class="xi-maker"></i> AK플라자 홍대</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>알렉스 키토 사진전</h4>
                 </a>
                 <div><i class="xi-calendar"></i> 2025.05.23~2025.07.31</div>
                 <div><i class="xi-maker"></i> 그라운드 시소 이스트</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>[동탄]어둠 속의 대화</h4>
                 </a>
@@ -1277,7 +1285,7 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/kiaf_poster.png" alt="키아프서울" />
                 </div>
               </a>
@@ -1304,7 +1312,7 @@
                 <div><i class="xi-calendar"></i> 2025.09.03~2025.09.06</div>
                 <div><i class="xi-maker"></i> coex</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>키아프 서울</h4>
                 </a>
@@ -1349,7 +1357,7 @@
                 </div>
               </a>
               <a href="../detail.html">
-                <div class="box">
+                <div class="box hide_box">
                   <img src="../img/sub1-2/kiaf_poster.png" alt="키아프서울" />
                 </div>
               </a>
@@ -1376,7 +1384,7 @@
                 <div><i class="xi-calendar"></i> 2025.09.03~2025.09.06</div>
                 <div><i class="xi-maker"></i> coex</div>
               </div>
-              <div class="detail">
+              <div class="detail hide_box">
                 <a href="../detail.html">
                   <h4>키아프 서울</h4>
                 </a>
