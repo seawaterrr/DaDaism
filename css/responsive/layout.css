@@ -29,32 +29,11 @@
     color: #333;
   }
   .hamburger {
-    height: 2.8125rem;
-    display: grid;
-    grid-template-rows: repeat(3, 0.3125rem);
-    justify-items: center;
-    margin-top: 0.3125rem;
+    display: block;
   }
-  .hamburger div {
-    background-color: #333;
-    position: relative;
-    width: 3.125vw;
-    height: 0.125rem;
-    transition: all 0.2s ease-in-out;
-  }
-  #toggle {
-    display: none;
-  }
-  #toggle:checked + .hamburger .top {
-    transform: rotate(45deg);
-    margin-top: 1.25vw;
-  }
-  #toggle:checked + .hamburger .middle {
-    transform: rotate(-45deg);
-    margin-top: 0.208vw;
-  }
-  #toggle:checked + .hamburger .bottom {
-    transform: scale(0);
+  .xi-ellipsis-v {
+    font-size: 1.125rem;
+    color: #333;
   }
   main {
     margin-top: 3.125rem;
@@ -407,33 +386,9 @@
     font-size: 3.3vw;
     color: #333;
   }
-  .hamburger {
-    height: 2.63vw;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: center;
-    margin-top: 0.53vw;
-  }
-  .hamburger div {
-    background-color: #333;
-    position: relative;
-    width: 3vw;
-    height: 0.27vw;
-    transition: all 0.2s ease-in-out;
-  }
-  #toggle {
-    display: none;
-  }
-  #toggle:checked + .hamburger .top {
-    transform: rotate(45deg);
-    margin-top: 0.72vw;
-  }
-  #toggle:checked + .hamburger .middle {
-    transform: rotate(-45deg);
-    margin-top: -0.32vw;
-  }
-  #toggle:checked + .hamburger .bottom {
-    transform: scale(0);
+  .xi-ellipsis-v {
+    font-size: 3.3vw;
+    color: #333;
   }
   main {
     margin-top: 9.21vw;
