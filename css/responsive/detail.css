@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  header {
+    height: 13.33vw;
+  }
+
+  .con {
+    height: 13.33vw;
+    width: 87.3vw;
+  }
+
+  h1 {
+    width: 17.3vw;
+    height: 4.44vw;
+  }
+
+  h1 img {
+    width: 100%;
+    filter: none;
+  }
+
+  #gnb {
+    display: none;
+  }
+
+  .icons {
+    gap: 2.5vw;
+  }
+
+  .xi-search,
+  .xi-user-o {
+    font-size: 4.5vw;
+    color: #333;
+  }
+
+  .icons .hamburger {
+    display: block;
+  }
+
+  .xi-ellipsis-v {
+    font-size: 4.5vw;
+    color: #333;
+  }
+
+  .content {
+    width: 87.3vw;
+    margin: 0 auto;
+  }
+
+  footer {
+    height: 30vw;
+  }
+
+  footer > .content {
+    width: 87.3vw;
+    height: 30vw;
+  }
+
+  footer > .content img {
+    width: 9.375vw;
+    margin-right: 6.25vw;
+  }
+
+  .footer_text p {
+    font-size: 1.5vw;
+    margin-bottom: 0.75vw;
+  }
+
+  .footer_text a {
+    text-decoration: none;
+  }
+
+  .right_icons > ul {
+    width: 18.1vw;
+    display: flex;
+    gap: 1.67vw;
+  }
+
+  .right_icons > ul > li {
+    width: 3.33vw;
+  }
+
+  .right_icons > ul > li img {
+    width: 3.13vw;
+    height: 3.13vw;
+  }
+}

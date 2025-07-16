@@ -1,0 +1,396 @@
+/* 320~479px (모바일 소형) */
+@media (max-width: 479px) {
+  header {
+    height: 3.125rem; /* 50px */
+  }
+  .con {
+    height: 3.125rem;
+    width: 87.3vw;
+  }
+  h1 {
+    width: 17.3vw;
+    height: 1.11rem;
+  }
+  h1 img {
+    width: 100%;
+    filter: none;
+  }
+  #gnb {
+    display: none;
+  }
+  .icons {
+    gap: 1.56vw;
+  }
+  .xi-search,
+  .xi-user-o,
+  .xi-ellipsis-v {
+    font-size: 1.125rem; /* 18px */
+    color: #333;
+  }
+  .icons .hamburger {
+    display: block;
+  }
+  .content {
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .left_con,
+  .right_con {
+    width: 100%;
+    margin: 60px auto;
+    height: auto;
+  }
+  .right_con {
+    margin: 0px auto;
+  }
+
+  .search_box {
+    width: 90%;
+    height: 16px;
+  }
+
+  .search_text {
+    width: 65%;
+    line-height: 16px;
+    font-size: 14px;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+  }
+
+  .exhibition {
+    gap: 10px;
+  }
+
+  .ex_title {
+    width: 80%;
+  }
+  .ex_img {
+    width: 20%;
+  }
+
+  .list {
+    padding-left: 20px;
+  }
+
+  .museum_name {
+    padding-left: 20px;
+    font-size: 16px;
+  }
+
+  .info {
+    padding-left: 20px;
+  }
+
+  #map {
+    height: 400px !important;
+  }
+  footer {
+    height: 7.5rem;
+    margin-top: 50px;
+  }
+
+  footer > .content {
+    width: 87.3vw;
+    height: 7.5rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer > .content img {
+    width: 9.375vw;
+    margin-right: 6.25vw;
+  }
+
+  .footer_text p {
+    font-size: 1.2vw; /* 약 0.375rem */
+    margin-bottom: 0.6vw;
+  }
+
+  .footer_text a {
+    text-decoration: none;
+  }
+
+  .right_icons > ul {
+    width: 18.1vw;
+    display: flex;
+    gap: 1.67vw;
+  }
+
+  .right_icons > ul > li {
+    width: 3.33vw;
+  }
+
+  .right_icons > ul > li img {
+    width: 3.13vw;
+    height: 3.13vw;
+  }
+}
+
+/* 480~767px (모바일 중형 ~ 작은 태블릿) */
+@media (min-width: 480px) and (max-width: 767px) {
+  header {
+    height: 9.1vw;
+  }
+  .con {
+    height: 9.1vw;
+    width: 92.2vw;
+  }
+  h1 {
+    width: 11.6vw;
+    height: 2.2vw;
+  }
+  h1 img {
+    width: 100%;
+    filter: none;
+  }
+  #gnb {
+    display: none;
+  }
+  .icons .hamburger {
+    gap: 2.78vw;
+  }
+  .xi-search,
+  .xi-user-o {
+    font-size: 3.3vw;
+    color: #333;
+  }
+  .hamburger {
+    display: block;
+  }
+  .xi-ellipsis-v {
+    font-size: 3.3vw;
+    color: #333;
+  }
+  .content {
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .left_con,
+  .right_con {
+    width: 100%;
+    margin: 80px auto;
+    height: auto;
+  }
+  .right_con {
+    margin: 0 auto;
+  }
+  .search_box {
+    width: 97%;
+  }
+
+  .search_text {
+    width: 70%;
+    font-size: 15px;
+  }
+  .museum_img {
+    width: 661.8px;
+    height: 150px;
+  }
+  .museum_img img {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    margin-top: 30px;
+  }
+
+  .exhibition {
+    gap: 260px;
+  }
+
+  .ex_title {
+    width: 45%;
+  }
+  .ex_img {
+    width: fit-content;
+  }
+  .museum_name {
+    font-size: 17px;
+  }
+
+  #map {
+    height: 500px !important;
+  }
+  footer {
+    height: 15vw; /* 7.5rem */
+    margin-top: 50px;
+  }
+
+  footer > .content img {
+    width: 6vw;
+    margin-right: 6.25vw;
+  }
+
+  footer > .content {
+    width: 87.3vw;
+    height: 15vw;
+    flex-direction: row;
+  }
+
+  .footer_text p {
+    font-size: 0.8vw; /* 0.375rem */
+    margin-bottom: 0.7vw; /* 0.1875rem */
+  }
+
+  .footer_text a {
+    text-decoration: none;
+  }
+
+  .right_icons > ul {
+    width: 18.1vw;
+    display: flex;
+    gap: 1.67vw;
+  }
+
+  .right_icons > ul > li {
+    width: 3.33vw;
+  }
+
+  .right_icons > ul > li img {
+    width: 3.13vw;
+    height: 3.13vw;
+  }
+}
+
+/* 768~1023px (태블릿 ~ 작은 노트북) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    width: 100%;
+    height: 6.84vw;
+  }
+
+  .con {
+    width: 84.35vw;
+    height: 6.84vw;
+  }
+
+  h1 {
+    width: 7.29vw;
+    height: 1.44vw;
+  }
+
+  h1 img {
+    width: 100%;
+  }
+
+  #gnb {
+    width: 48.83vw;
+    height: 6.35vw;
+  }
+
+  #gnb > ul {
+    gap: 4.56vw;
+  }
+
+  #gnb > ul > li {
+    font-size: 1.22vw;
+  }
+
+  .submenu > li {
+    width: 6.75vw;
+  }
+
+  #gnb::after {
+    top: 5.7vw;
+  }
+
+  .xi-search,
+  .xi-user-o {
+    font-size: 1.63vw;
+  }
+
+  .icons {
+    gap: 1.63vw;
+  }
+  .content {
+    justify-content: space-between;
+    width: 84.35vw;
+    margin: 20px auto;
+  }
+
+  .left_con {
+    width: 47%;
+    height: auto;
+    margin: 60px 0 50px 0;
+  }
+
+  .right_con {
+    width: 50%;
+    height: 818px;
+    margin: 60px 0 50px 0;
+  }
+
+  .search_box {
+    width: 94%;
+  }
+
+  .search_text {
+    width: 75%;
+    font-size: 16px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    max-height: 750px;
+  }
+
+  .exhibition {
+    gap: 140px;
+  }
+
+  .ex_title,
+  .ex_img {
+    width: 48%;
+  }
+
+  .museum_name {
+    font-size: 18px;
+  }
+
+  #map {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  footer {
+    height: 11.59vw;
+  }
+
+  footer > .content {
+    width: 87.5vw;
+    height: 11.59vw;
+  }
+
+  footer > .content img {
+    width: 4.88vw;
+    margin-right: 3.05vw;
+  }
+
+  .footer_text p {
+    font-size: 0.61vw;
+  }
+
+  .right_icons > ul {
+    width: 12.21vw;
+    gap: 0.92vw;
+  }
+
+  .right_icons > ul > li {
+    width: 1.83vw;
+  }
+
+  .right_icons > ul > li img {
+    width: 1.83vw;
+    height: 1.83vw;
+    opacity: 0.5;
+  }
+}

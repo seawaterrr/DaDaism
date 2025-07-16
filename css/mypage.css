@@ -137,6 +137,9 @@ h1 {
   color: #333;
   font-size: 25px;
 }
+.icons .hamburger {
+  display: none;
+}
 /* 헤더 호버 */
 #gnb:hover::after {
   height: 200px;
@@ -322,8 +325,11 @@ main {
   margin-bottom: 32px;
 }
 .list_up {
+  color: #666;
   display: flex;
   justify-content: space-between;
+  font-size: 15px;
+  margin: 48px 0 32px 0;
 }
 .list_up button {
   background-color: transparent;
@@ -333,11 +339,6 @@ main {
 }
 .list_up button:focus {
   color: #333;
-}
-.review h5 {
-  font-size: 15px;
-  font-weight: 500;
-  margin: 48px 0 32px 0;
 }
 .review p {
   line-height: 30px;
@@ -353,7 +354,7 @@ main {
   width: 122px;
 }
 .more {
-  margin-top: 16px;
+  margin-top: 32px;
   display: flex;
   justify-content: space-between;
   color: #666;
