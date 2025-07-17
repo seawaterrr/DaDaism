@@ -3,22 +3,80 @@
 /* 모바일~큰모바일 */
 @media screen and (min-width: 320px) and (max-width: 479px) {
   header {
-    height: 3.125rem;
+    height: 3.125rem; /* 50px */
   }
+
   .con {
-    height: 3.125rem;
+    height: 3.125rem; /* 50px */
     width: 87.3vw;
   }
+
   h1 {
     width: 17.3vw;
-    height: 1.03rem;
+    height: 1.03125rem; /* 16.5px */
   }
+
   h1 img {
-    width: 17.3vw;
+    width: 100%;
     filter: none;
   }
+
   #gnb {
     display: none;
+  }
+
+  #gnb2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 12.5rem; /* 200px */
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 4.375rem; /* 70px */
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 998;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    pointer-events: none;
+  }
+  #gnb2.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .hamburger i {
+    cursor: pointer;
+  }
+
+  #gnb2 > ul {
+    background-color: #fff;
+    padding: 1.25rem 0 0.625rem 1.875rem; /* 20px 0 10px 30px */
+  }
+
+  #gnb2 > ul > li {
+    margin-bottom: 1.5625rem; /* 25px */
+  }
+
+  #gnb2 > ul > li > a {
+    color: #666;
+    font-weight: 600;
+  }
+  #gnb2 a:hover {
+    color: #587d00;
+  }
+  .submenu2 {
+    margin-top: 0.625rem; /* 10px */
+  }
+
+  .submenu2 li {
+    margin-bottom: 0.625rem; /* 10px */
+  }
+
+  .submenu2 li a {
+    color: #666;
   }
   .icons {
     gap: 0.625rem;
@@ -378,6 +436,61 @@
   #gnb {
     display: none;
   }
+
+  #gnb2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 12.5rem; /* 200px */
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 5.375rem; /* 70px */
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 998;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    pointer-events: none;
+  }
+  #gnb2.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .hamburger i {
+    cursor: pointer;
+  }
+
+  #gnb2 > ul {
+    background-color: #fff;
+    padding: 1.25rem 0 0.625rem 1.875rem; /* 20px 0 10px 30px */
+  }
+
+  #gnb2 > ul > li {
+    margin-bottom: 1.5625rem; /* 25px */
+  }
+
+  #gnb2 > ul > li > a {
+    color: #666;
+    font-weight: 600;
+  }
+  #gnb2 a:hover {
+    color: #587d00;
+  }
+
+  .submenu2 {
+    margin-top: 0.625rem; /* 10px */
+  }
+
+  .submenu2 li {
+    margin-bottom: 0.625rem; /* 10px */
+  }
+
+  .submenu2 li a {
+    color: #666;
+  }
   .icons {
     gap: 2.78vw;
   }
@@ -385,6 +498,9 @@
   .xi-user-o {
     font-size: 3.3vw;
     color: #333;
+  }
+  .icons .hamburger {
+    display: block;
   }
   .xi-ellipsis-v {
     font-size: 3.3vw;

@@ -44,6 +44,9 @@ h1 img {
   filter: brightness(0) invert(1);
 }
 /* 메뉴 */
+#gnb2 {
+  display: none;
+}
 #gnb {
   width: 442px;
   height: 80px;
@@ -142,7 +145,7 @@ h1 img {
   color: #fff;
   font-size: 25px;
 }
-.hamburger {
+.icons .hamburger {
   display: none;
 }
 /* 헤더 호버 */

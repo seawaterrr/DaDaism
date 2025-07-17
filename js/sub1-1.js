@@ -186,3 +186,23 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".tab__item:first-child").click();
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburgerBtn = document.querySelector(".hamburger i");
+  const gnb2 = document.getElementById("gnb2");
+
+  hamburgerBtn.addEventListener("click", function () {
+    const isOpen = gnb2.classList.contains("active");
+
+    if (isOpen) {
+      // 닫기
+      gnb2.classList.remove("active");
+      hamburgerBtn.classList.remove("xi-close");
+      hamburgerBtn.classList.add("xi-ellipsis-v");
+    } else {
+      // 열기
+      gnb2.classList.add("active");
+      hamburgerBtn.classList.remove("xi-ellipsis-v");
+      hamburgerBtn.classList.add("xi-close");
+    }
+  });
+});

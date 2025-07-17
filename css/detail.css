@@ -40,6 +40,9 @@ h1 {
   height: 24px;
 }
 /* 메뉴 */
+#gnb2 {
+  display: none;
+}
 #gnb {
   width: 442px;
   height: 80px;
@@ -136,6 +139,9 @@ h1 {
 .xi-user-o {
   color: #333;
   font-size: 25px;
+}
+.icons .hamburger {
+  display: none;
 }
 /* 헤더 호버 */
 #gnb:hover::after {

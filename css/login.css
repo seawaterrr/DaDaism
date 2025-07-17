@@ -40,6 +40,9 @@ h1 {
   height: 24px;
 }
 /* 메뉴 */
+#gnb2 {
+  display: none;
+}
 #gnb {
   width: 442px;
   height: 80px;
