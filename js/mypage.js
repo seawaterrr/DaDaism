@@ -1,6 +1,7 @@
 const reviewParagraphs = document.querySelectorAll(".review p");
 const moreButtons = document.querySelectorAll(".more button");
 
+// 리뷰 더보기 버튼
 reviewParagraphs.forEach((paragraph, index) => {
   paragraph.style.overflow = "hidden";
   paragraph.style.display = "-webkit-box";
@@ -20,6 +21,8 @@ reviewParagraphs.forEach((paragraph, index) => {
     }
   });
 });
+
+// 햄버거 버튼
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerBtn = document.querySelector(".hamburger i");
   const gnb2 = document.getElementById("gnb2");

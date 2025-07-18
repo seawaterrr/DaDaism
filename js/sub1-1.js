@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // --- Domestic City Selection Logic ---
   const domesticButtons = document.querySelectorAll(
     "#tab1 .choice .location button"
   );
@@ -73,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     세종: ["sejongRank", "sejongList"],
     강원: ["gangwonRank", "gangwonList"],
     제주: ["jejuRank", "jejuList"],
-    전국: ["nationwideRank", "nationwideList"], // Adjust IDs if you only have one section for '전국'
+    전국: ["nationwideRank", "nationwideList"],
   };
 
   function hideAllDomesticSections() {
@@ -113,7 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // --- Overseas City Selection Logic ---
   const overseasButtons = document.querySelectorAll(
     "#tab2 .choice .location button"
   );
@@ -136,7 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
     스위스: ["switzerlandRank", "switzerlandList"],
     그리스: ["greeceRank", "greeceList"],
     태국: ["thailandRank", "thailandList"],
-    // Add all other overseas cities with their respective IDs
   };
 
   function hideAllOverseasSections() {
@@ -176,16 +173,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // --- Initial Page Load Setup ---
-  // Simulate click on the default domestic tab (or whichever you want active initially)
   const defaultTab = document.querySelector(".tab__item.active");
   if (defaultTab) {
     defaultTab.click();
   } else {
-    // If no active tab is set in HTML, default to the first one (Domestic)
     document.querySelector(".tab__item:first-child").click();
   }
 });
+
+// 햄버거 버튼
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerBtn = document.querySelector(".hamburger i");
   const gnb2 = document.getElementById("gnb2");

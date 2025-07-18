@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.classList.remove("active");
   });
 });
+
+// 햄버거 버튼
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerBtn = document.querySelector(".hamburger i");
   const gnb2 = document.getElementById("gnb2");

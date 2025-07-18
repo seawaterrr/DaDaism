@@ -5,6 +5,7 @@ const loginBtn = document.querySelector(".login_btn");
 const userIdBox = userId.closest(".user_info");
 const userPwBox = userPw.closest(".user_info");
 
+// 로그인 버튼 활성화
 function updateButtonState() {
   const filled = userId.value.trim() && userPw.value.trim();
   loginBtn.style.backgroundColor = filled ? "#587D00" : "#999";
@@ -25,14 +26,14 @@ userPw.addEventListener("input", updateButtonState);
 
 updateButtonState();
 
-// ✅ 로그인 버튼 클릭 시 페이지 이동
+// 로그인 버튼 클릭 시 페이지 이동
 loginBtn.addEventListener("click", function () {
   if (!loginBtn.disabled) {
     window.location.href = "./mypage.html";
   }
 });
 
-// ✅ Enter 키로 로그인 가능하도록 추가
+// Enter 키로 로그인
 [userId, userPw].forEach((input) => {
   input.addEventListener("keydown", function (e) {
     if (e.key === "Enter" && !loginBtn.disabled) {

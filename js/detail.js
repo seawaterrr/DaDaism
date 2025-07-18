@@ -1,15 +1,14 @@
+// 하트 버튼
 document.addEventListener("DOMContentLoaded", function () {
-  // --- 추가된 하트 버튼 코드 시작 ---
   const heartButton = document.querySelector('button[name="heart"]');
 
   heartButton.addEventListener("click", function () {
     const heartIcon = this.querySelector("i");
-    // classList.toggle을 사용하여 'xi-heart'와 'xi-heart-o' 클래스를 번갈아 적용합니다.
     heartIcon.classList.toggle("xi-heart");
     heartIcon.classList.toggle("xi-heart-o");
   });
-  // --- 추가된 하트 버튼 코드 끝 ---
 
+  // 리뷰 더보기 버튼
   const reviewParagraphs = document.querySelectorAll(".review p");
   const moreButtons = document.querySelectorAll(".more button");
 
@@ -32,6 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // 이미지 상세보기 버튼
   const moreViewButton = document.querySelector(".moreview");
   const images = document.querySelectorAll(".about img");
 
@@ -42,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     moreViewButton.style.display = "none";
   });
 
+  // about, review 버튼
   const aboutButton = document.querySelector('button[name="about"]');
   const reviewButton = document.querySelector('button[name="review"]');
   const aboutSection = document.querySelector(".about");
@@ -73,6 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
     aboutButton.classList.remove("active-tab");
   });
 });
+
+// 햄버거 버튼
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerBtn = document.querySelector(".hamburger i");
   const gnb2 = document.getElementById("gnb2");
@@ -81,12 +85,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const isOpen = gnb2.classList.contains("active");
 
     if (isOpen) {
-      // 닫기
       gnb2.classList.remove("active");
       hamburgerBtn.classList.remove("xi-close");
       hamburgerBtn.classList.add("xi-ellipsis-v");
     } else {
-      // 열기
       gnb2.classList.add("active");
       hamburgerBtn.classList.remove("xi-ellipsis-v");
       hamburgerBtn.classList.add("xi-close");

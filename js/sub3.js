@@ -7,7 +7,6 @@ kakao.maps.load(function () {
 
   var map = new kakao.maps.Map(mapContainer, mapOption);
 
-  // 마커 정보 배열 + 카드 ID 정보 추가
   var locations = [
     {
       title: "국립현대미술관 서울",
@@ -26,17 +25,13 @@ kakao.maps.load(function () {
     },
   ];
 
-  // 카드 전부 숨기는 함수
   function hideAllCards() {
     document.querySelectorAll(".card").forEach((card) => {
       card.style.display = "none";
     });
   }
-
-  // 초기에는 모두 숨기기
   hideAllCards();
 
-  // 마커 생성 반복
   locations.forEach(function (loc) {
     var marker = new kakao.maps.Marker({
       map: map,
@@ -57,14 +52,16 @@ kakao.maps.load(function () {
     });
 
     kakao.maps.event.addListener(marker, "click", function () {
-      hideAllCards(); // 모든 카드 숨기고
+      hideAllCards();
       var targetCard = document.getElementById(loc.cardId);
       if (targetCard) {
-        targetCard.style.display = "block"; // 해당 카드만 보이기
+        targetCard.style.display = "block";
       }
     });
   });
 });
+
+// 햄버거 버튼
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerBtn = document.querySelector(".hamburger i");
   const gnb2 = document.getElementById("gnb2");
