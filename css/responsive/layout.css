@@ -22,7 +22,7 @@
   }
 
   #gnb {
-    display: none;
+    display: none !important;
   }
 
   #gnb2 {
@@ -81,12 +81,12 @@
   .icons {
     gap: 0.625rem;
   }
-  .xi-search,
-  .xi-user-o {
+  .icons .xi-search,
+  .icons .xi-user-o {
     font-size: 1.125rem;
-    color: #333;
+    color: #333 !important;
   }
-  .hamburger {
+  .icons .hamburger {
     display: block;
   }
   .xi-ellipsis-v {
@@ -497,7 +497,7 @@
   .xi-search,
   .xi-user-o {
     font-size: 3.3vw;
-    color: #333;
+    color: #333 !important;
   }
   .icons .hamburger {
     display: block;

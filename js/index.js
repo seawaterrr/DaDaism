@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger);
 
-  // 스크롤 트리거
+  // GSAP animations for header and main image text/progress
   gsap
     .timeline({
       scrollTrigger: {
@@ -127,8 +127,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     },
   });
 });
-
-// 추천 전시 새로고침
 document.addEventListener("DOMContentLoaded", () => {
   const section = document.querySelector(".sec3");
   let hasBeenAnimated = false;
@@ -184,8 +182,6 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(section);
   });
 });
-
-// 추천 전시 랜덤 적용
 document.addEventListener("DOMContentLoaded", () => {
   const refreshButton = document.querySelector(".title2 button");
   const exhibitionContainers = document.querySelectorAll(".sec3_con");
@@ -230,8 +226,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   checkSectionVisibility();
 });
-
-// 햄버거 버튼
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerBtn = document.querySelector(".hamburger i");
   const gnb2 = document.getElementById("gnb2");

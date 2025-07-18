@@ -14,7 +14,7 @@ body {
 .content {
   width: 1600px;
   height: auto;
-  margin: 0 160px;
+  margin: 0 auto;
 }
 header {
   width: 100%;
@@ -194,18 +194,6 @@ h1 {
   font-weight: 500;
   line-height: 30px;
 }
-/* .main_con {
-  height: fit-content;
-  position: relative;
-}
-.local_choice {
-  position: absolute;
-}
-.global_choice {
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
 /* 칩 */
 .tab {
   display: flex;
@@ -233,7 +221,7 @@ h1 {
   border: 0.5px solid #d9d9d9;
   color: #96a376;
 }
-tab__content-wrapper {
+.tab__content-wrapper {
   padding: 1rem;
 }
 .tab__content {
@@ -277,54 +265,48 @@ h2 {
 .rank h2 {
   margin-bottom: 40px;
 }
-.posters {
-  width: 1592px;
+.exhibitions {
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: start;
-  gap: 48px;
+  gap: 50px;
+  flex-wrap: wrap;
 }
-.box {
+.exhibition {
+  margin-bottom: 50px;
+}
+.poster {
   width: 280px;
+  height: 396px;
   overflow: hidden;
+  margin: 0;
 }
-.box img {
+.poster img {
   object-fit: cover;
   transform: scale(1);
 }
-.box img:hover {
-  width: 100%;
+.poster img:hover {
   transform: scale(1.02);
   transition: 0.3s linear;
 }
-.rank .titles {
-  width: 1592px;
-  display: flex;
-  justify-content: start;
-  gap: 48px;
-  margin-top: 16px;
-  border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 70px;
-}
-.detail {
-  width: 272px;
-  height: 94px;
-  margin-left: 8px;
-}
-.detail h4 {
-  height: 24px;
-  width: 272px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.exhibition h4 {
+  width: 268px;
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin: 16px 0 15px 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.detail div {
+.exhibition div:not(:first-of-type) {
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 15px;
+  margin-left: 4px;
+}
+.local_list .exhibition {
+  margin-bottom: 100px;
 }
 /* 지역별 전시 리스트 */
 .top_con {
