@@ -200,19 +200,27 @@ h2 {
 }
 /* 예매율 높은 갤러리 */
 .rank h2 {
-  margin: 120px 0 40px 0;
+  margin: 120px 0 60px 0;
 }
-.posters {
-  width: 1592px;
+.gallerys {
+  width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 50px;
+  flex-wrap: wrap;
 }
-.box {
+.gallery {
+  margin-bottom: 50px;
+}
+.gallery_img {
   width: 280px;
+  height: 232px;
+  overflow: hidden;
+  margin: 0;
   position: relative;
 }
-.box img {
+.gallery_img img {
   width: 280px;
   height: 232px;
   position: absolute;
@@ -220,37 +228,32 @@ h2 {
   left: 0;
   transition: 0.3s;
 }
-.box:hover img:last-of-type {
+.gallery_img:hover img:last-of-type {
   opacity: 0;
 }
-.rank .titles {
-  width: 1592px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 70px;
-}
-.detail {
-  width: 272px;
-  height: 94px;
-  margin-left: 8px;
-  margin-top: 248px;
-}
-.detail h4 {
+.gallery h4 {
+  width: 268px;
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin: 16px 0 15px 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.detail div {
+.gallery div:not(:first-of-type) {
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 15px;
+  margin-left: 4px;
+}
+.local_list .gallerys {
+  margin-bottom: 100px;
 }
 /* 지역별 전시 리스트 */
 .top_con {
   display: flex;
   justify-content: space-between;
-  margin: 60px 0 80px 0;
+  margin: 60px 0 100px 0;
 }
 .course {
   width: 200px;

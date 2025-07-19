@@ -559,9 +559,6 @@ button > i {
 .sec6 .poster img:hover {
   transform: scale(1);
 }
-.review_img {
-  position: relative;
-}
 .review_text {
   width: 230px;
   height: 222px;

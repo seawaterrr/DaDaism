@@ -354,14 +354,6 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-.titles {
-  width: 1592px;
-  display: flex;
-  justify-content: start;
-  gap: 48px;
-  margin-top: 16px;
-  margin-bottom: 120px;
-}
 /* footer */
 footer {
   width: 100%;

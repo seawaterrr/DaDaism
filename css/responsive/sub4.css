@@ -450,68 +450,40 @@
     margin: 7.82vw 0 5.22vw; /* 60px 0 40px */
   }
 
-  .posters2 {
-    width: 92.2vw;
-    gap: 3.9vw;
+  .exhibitions {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
   }
-
-  .review_imgs {
-    width: 28.1vw;
+  .poster {
+    width: 280px;
+    height: 396px;
     overflow: hidden;
   }
-  .review_imgs img {
-    width: 100%;
+  .poster img {
     object-fit: cover;
+    transform: scale(1);
   }
-
-  .hide_box {
-    display: none;
+  .poster img:hover {
+    transform: scale(1.02);
+    transition: 0.3s linear;
   }
-
-  .review_text {
-    width: 28.1vw;
-    transform: translateY(-9.78vw) translateX(2.61vw); /* -75px, 20px */
-    line-height: 1.5;
-    font-size: 1.3vw;
-  }
-
-  .review_text > p {
-    width: 24vw;
-    margin-bottom: 1.3vw;
-  }
-
-  .review_text > span:last-of-type {
-    margin-left: 13vw;
-  }
-
-  .rank .titles2 {
-    width: 92.2vw;
-    gap: 3.9vw;
-    margin-top: 1.8vw;
-    padding-bottom: 6.4vw;
-  }
-
-  .titles2 {
-    width: 92.2vw;
-    gap: 3.9vw;
-    margin: 1.8vw 0 7vw 0;
-  }
-
-  .detail2 {
-    width: 27.7vw;
-    height: 9.2vw;
-    margin-left: 0.86vw;
-  }
-
-  .detail2 h4 {
-    font-size: 2.35vw; /* 18px */
+  .exhibition h4 {
+    width: 268px;
+    font-size: 20px;
     font-weight: 700;
-    margin-bottom: 1vw;
+    margin: 16px 0 15px 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
-
-  .detail2 div {
-    font-size: 1.56vw; /* 12px */
-    margin-bottom: 1.3vw;
+  .exhibition div:not(:first-of-type) {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-left: 4px;
   }
 
   .top_con {
