@@ -1,26 +1,31 @@
 @charset "utf-8";
 
 /* 모바일 세로 */
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  section {
+    width: 100%;
+  }
   header {
-    height: 9.77vw;
+    background-color: #fff;
+    height: 70px;
+    z-index: 999;
   }
-
   .con {
-    height: 9.77vw;
-    width: 87.3vw;
+    width: 90%;
+    height: 70px;
   }
-
   h1 {
-    width: 17.3vw;
-    height: 3.22vw;
+    width: fit-content;
+    height: fit-content;
   }
-
   h1 img {
-    width: 17.3vw;
+    width: 70%;
     filter: none;
   }
-
   #gnb {
     display: none;
   }
@@ -28,14 +33,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 12.5rem; /* 200px */
+    height: 12.5rem;
     width: 100%;
     position: absolute;
     left: 0;
-    top: 4.375rem; /* 70px */
+    top: 70px;
     background-color: #fff;
     box-sizing: border-box;
-    z-index: 998;
+    z-index: 100;
     transform: translateY(-100%);
     opacity: 0;
     transition: transform 0.5s ease, opacity 0.5s ease;
@@ -46,19 +51,13 @@
     opacity: 1;
     pointer-events: auto;
   }
-  .hamburger i {
-    cursor: pointer;
-  }
-
   #gnb2 > ul {
     background-color: #fff;
-    padding: 1.25rem 0 0.625rem 1.875rem; /* 20px 0 10px 30px */
+    padding: 1.25rem 0 0.625rem 1.875rem;
   }
-
   #gnb2 > ul > li {
-    margin-bottom: 1.5625rem; /* 25px */
+    margin-bottom: 1.5625rem;
   }
-
   #gnb2 > ul > li > a {
     color: #666;
     font-weight: 600;
@@ -69,749 +68,900 @@
   .submenu2 {
     margin-top: 0.625rem; /* 10px */
   }
-
   .submenu2 li {
     margin-bottom: 0.625rem; /* 10px */
   }
-
   .submenu2 li a {
     color: #666;
   }
   .icons {
-    gap: 2vw;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 8px;
   }
-
-  .icons .hamburger {
-    display: block;
+  .icons > button i {
+    font-size: 20px;
   }
   .xi-search,
-  .xi-user-o,
-  .xi-ellipsis-v {
-    font-size: 1.125rem;
+  .xi-user-o {
     color: #333;
   }
-
-  .content {
-    width: 87.3vw;
-    margin: 0 auto;
+  .icons .hamburger {
+    display: flex;
+    justify-content: center;
   }
-
   .depth {
-    margin-top: 12.5vw;
+    margin-top: 70px;
     height: 10.55vw;
-    font-size: 0.625rem;
+    font-size: clamp(8px, 2.5vw, 13px);
     line-height: 10.55vw;
   }
-
   .sub_img {
-    height: 19.1vw;
+    height: clamp(90px, 28.125vw, 150px);
     background: url(../../img/sub1-1/image479.png) no-repeat;
     background-size: cover;
   }
-
   .sub_text {
-    height: 19.1vw;
+    height: clamp(90px, 28.125vw, 150px);
   }
-
   .sub_text h3 {
-    font-size: 0.45rem;
-    margin-bottom: 1vw;
+    font-size: clamp(8px, 2.5vw, 13px);
+    margin-bottom: clamp(5px, 1.563vw, 10px);
   }
-
   .sub_text h2 {
-    font-size: 0.625rem;
-    margin-bottom: 3.13vw;
+    font-size: clamp(10px, 3.125vw, 15px);
+    margin-bottom: clamp(20px, 6.25vw, 30px);
   }
-
   .sub_text p {
-    font-size: 0.375rem;
-    line-height: 2.53vw;
+    font-size: clamp(8px, 2.5vw, 13px);
+    line-height: 1.5;
   }
-
   .tab {
-    margin: 7vw 0;
-    gap: 2.5vw;
+    margin: clamp(22.4px, 7vw, 44.7px) 0;
+    gap: clamp(8px, 2.5vw, 16px);
   }
-
   .tab a {
-    width: 8.5vw;
-    height: 5vw;
+    width: clamp(35px, 10.938vw, 56px);
+    height: clamp(19px, 5.938vw, 32px);
     border-radius: 100px;
-    font-size: 0.5rem;
-    line-height: 5vw;
+    font-size: clamp(8px, 2.5vw, 14px);
+    line-height: clamp(19px, 5.938vw, 32px);
   }
-
   h2 {
-    font-size: 0.6875rem;
+    font-size: clamp(14px, 4.375vw, 20px);
   }
-
+  .tab__content-wrapper {
+    padding: 0;
+  }
   .location {
-    margin: 3.32vw 0 7vw;
+    margin: clamp(16px, 5vw, 32px) 0 clamp(22.4px, 7vw, 44.7px);
   }
-
   .location table {
-    width: 87.3vw;
+    width: 100%;
+    height: auto;
   }
-
   .location table td button {
-    width: 15vw;
-    height: 6vw;
-    line-height: 6vw;
-    font-size: 0.45rem;
-    color: #333;
+    width: 100%;
+    height: clamp(23px, 7.188vw, 36px);
+    line-height: clamp(16px, 5vw, 30px);
+    font-size: clamp(8px, 2.5vw, 14px);
   }
-
   .rank h2 {
-    margin-bottom: 4.7vw;
+    margin: clamp(28px, 8.75vw, 56px) 0;
   }
-
-  .posters {
-    width: 90vw;
-    gap: 6vw;
+  .exhibitions {
+    gap: clamp(3px, 2vw, 25px);
+    flex-wrap: wrap;
   }
-
-  .box {
-    width: 26.25vw;
+  .poster {
+    width: clamp(100px, 41.8vw, 290px);
+    height: auto;
     overflow: hidden;
   }
-
-  .box img {
+  .poster img {
     width: 100%;
     object-fit: cover;
+    transform: scale(1);
   }
-
-  .hide_box {
+  .exhibition h4 {
+    width: clamp(80px, 36.25vw, 390px);
+    font-size: clamp(10px, 4.063vw, 18px);
+    margin: clamp(6px, 3.125vw, 10px) 0 clamp(6px, 3.125vw, 10px)
+      clamp(2px, 1.25vw, 4px);
+  }
+  .exhibition div:not(:first-of-type) {
+    width: clamp(80px, 36.25vw, 390px);
+    font-size: clamp(8px, 3.125vw, 14px);
+    font-weight: 400;
+    margin-bottom: clamp(4px, 2.188vw, 8px);
+  }
+  .rank .exhibition:last-child {
     display: none;
   }
-
-  .rank .titles {
-    width: 90vw;
-    gap: 6vw;
-    margin-top: 1vw;
-    padding-bottom: 7vw;
-  }
-
-  .detail {
-    width: 25.8vw;
-    height: 8.95vw;
-    margin-left: 1.3vw;
-  }
-
-  .detail h4 {
-    height: 2.73vw;
-    font-size: 0.625rem;
-    margin-bottom: 0.78vw;
-  }
-
-  .detail div {
-    font-size: 0.5rem;
-    margin-bottom: 0.6vw;
-  }
-
   .top_con {
-    margin: 8vw 0 6vw;
+    margin: clamp(32px, 10vw, 64px) 0 clamp(25.6px, 8vw, 51.2px);
   }
-
   .course {
-    width: 22vw;
-    height: 5vw;
-    font-size: 0.75rem;
-    padding-left: 2vw;
+    width: clamp(70.4px, 22vw, 140px);
+    height: clamp(16px, 5vw, 32px);
+    font-size: clamp(12px, 3.75vw, 18px);
+    padding-left: clamp(6.4px, 2vw, 12.8px);
     color: #333;
   }
-
   .search_box {
-    height: 5vw;
-    width: 34vw;
-    border-radius: 6.9vw;
-    padding: 0 1vw;
+    height: clamp(16px, 5vw, 32px);
+    width: clamp(108.8px, 34vw, 220px);
+    border-radius: clamp(22.08px, 6.9vw, 44.16px);
+    padding: 0 clamp(3.2px, 1vw, 6.4px) 0 0;
     box-sizing: border-box;
   }
-
   .search_text {
-    font-size: 0.4375rem;
-    line-height: 5vw;
-    width: 27.5vw;
+    font-size: clamp(7px, 2.188vw, 12px);
+    line-height: clamp(16px, 5vw, 32px);
+    width: clamp(57.6px, 19vw, 120px);
   }
-
   .search_btn {
-    width: 4.5vw;
-    height: 4.5vw;
-    font-size: 0.5625rem;
+    width: clamp(12.8px, 4vw, 25.6px);
+    height: clamp(14.4px, 4.5vw, 25px);
+    font-size: clamp(7.4px, 2.313vw, 14.8px);
   }
-
   .search_btn i {
-    font-size: 0.5625rem;
-    line-height: 4.5vw;
+    font-size: clamp(7.4px, 2.313vw, 14.8px);
+    line-height: clamp(14.4px, 4.5vw, 25px);
   }
-
-  .titles {
-    width: 90vw;
-    gap: 6vw;
-    margin-top: 1vw;
-    margin-bottom: 8vw;
+  .local_list .exhibitions {
+    margin-bottom: clamp(30px, 9.375vw, 60px);
+  }
+  .local_list .exhibition {
+    margin-bottom: clamp(20px, 6.25vw, 40px);
   }
 
   footer {
-    height: 23.44vw;
-  }
-
-  footer > .content img {
-    width: 9.38vw;
-    margin-right: 6.25vw;
-  }
-
-  footer > .content {
-    width: 87.3vw;
-    height: 23.44vw;
-  }
-
-  .footer_text p {
-    font-size: 0.375rem;
-    margin-bottom: 0.6vw;
-  }
-
-  .footer_text a {
-    text-decoration: none;
-  }
-
-  .right_icons > ul {
-    width: 18.1vw;
+    width: 100%;
+    height: clamp(120px, 53.125vw, 200px);
+    background-color: #f8f8f8;
     display: flex;
-    gap: 1.67vw;
   }
-
+  footer > .content {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  footer > .content > div > img {
+    display: none;
+  }
+  .footer_text p {
+    font-size: clamp(7px, 2.813vw, 10px);
+    color: #666;
+    margin-bottom: clamp(4px, 1.875vw, 8px);
+  }
+  .right_icons {
+    margin: 0;
+    width: clamp(200px, 82.813vw, 265px);
+  }
+  .right_icons > ul {
+    justify-content: start;
+    gap: clamp(10px, 4.375vw, 14px);
+    margin-top: clamp(6px, 3.125vw, 10px);
+  }
   .right_icons > ul > li {
-    width: 3.33vw;
+    width: clamp(18px, 8.125vw, 30px);
   }
 
   .right_icons > ul > li img {
-    width: 3.13vw;
-    height: 3.13vw;
+    width: clamp(18px, 8.125vw, 30px);
+    height: clamp(18px, 8.125vw, 30px);
+    opacity: 0.5;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  header {
-    height: 9.1vw;
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .content {
+    width: 90%;
+    margin: 0 auto;
   }
-
+  header {
+    background-color: #fff;
+    height: 70px;
+    position: fixed;
+    z-index: 999;
+  }
   .con {
-    height: 9.1vw;
-    width: 92.2vw;
+    width: 90%;
+    height: 70px;
+    z-index: 999;
   }
 
   h1 {
-    width: 11.6vw;
-    height: 2.2vw;
+    width: fit-content;
+    height: fit-content;
   }
 
   h1 img {
-    width: 11.6vw;
+    width: 70%;
     filter: none;
   }
 
   #gnb {
     display: none;
   }
+
   #gnb2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 12.5rem; /* 200px */
+    height: clamp(160px, 19.53vw, 200px);
     width: 100%;
     position: absolute;
     left: 0;
-    top: 5.375rem; /* 70px */
+    top: 70px;
     background-color: #fff;
     box-sizing: border-box;
-    z-index: 998;
+    z-index: 100;
     transform: translateY(-100%);
     opacity: 0;
     transition: transform 0.5s ease, opacity 0.5s ease;
     pointer-events: none;
   }
+
   #gnb2.active {
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
-  }
-  .hamburger i {
-    cursor: pointer;
+    z-index: 100;
   }
 
   #gnb2 > ul {
     background-color: #fff;
-    padding: 1.25rem 0 0.625rem 1.875rem; /* 20px 0 10px 30px */
+    padding: clamp(16px, 2.5vw, 24px) 0 clamp(10px, 1.56vw, 15px)
+      clamp(30px, 5vw, 30px);
   }
 
   #gnb2 > ul > li {
-    margin-bottom: 1.5625rem; /* 25px */
+    margin-bottom: clamp(18px, 2.93vw, 30px);
   }
 
   #gnb2 > ul > li > a {
     color: #666;
     font-weight: 600;
   }
+
   #gnb2 a:hover {
     color: #587d00;
   }
 
   .submenu2 {
-    margin-top: 0.625rem; /* 10px */
+    margin-top: clamp(8px, 1.25vw, 10px);
   }
 
   .submenu2 li {
-    margin-bottom: 0.625rem; /* 10px */
+    margin-bottom: clamp(8px, 1.25vw, 10px);
   }
 
   .submenu2 li a {
     color: #666;
   }
+
   .icons {
-    gap: 2.78vw;
-  }
-  .icons .hamburger {
-    display: block;
-  }
-  .xi-search,
-  .xi-user-o,
-  .xi-ellipsis-v {
-    font-size: 3.3vw;
-    color: #333;
-  }
-
-  .content {
-    width: 92.2vw;
-    margin: 0 auto;
-  }
-
-  .depth {
-    margin-top: 9.1vw;
-    height: 11.2vw;
-    font-size: 1.063rem;
-    line-height: 11.2vw;
-  }
-
-  .sub_img {
-    height: 16.8vw;
-    background: url(../../img/sub1-1/image768.png) no-repeat;
-    background-size: cover;
-  }
-
-  .sub_text {
-    height: 16.8vw;
-  }
-
-  .sub_text h3 {
-    font-size: 0.8125rem;
-    margin-bottom: 1vw;
-  }
-
-  .sub_text h2 {
-    font-size: 1.125rem;
-    margin-bottom: 3.1vw;
-  }
-
-  .sub_text p {
-    font-size: 0.625rem;
-    line-height: 2.3vw;
-  }
-
-  .tab {
-    margin: 5vw 0;
-    gap: 1.56vw;
-  }
-
-  .tab a {
-    width: 5.86vw;
-    height: 3.39vw;
-    border-radius: 100px;
-    font-size: 0.8125rem;
-    line-height: 3.39vw;
-  }
-
-  h2 {
-    font-size: 1.22rem;
-  }
-
-  .location {
-    margin: 3.1vw 0 8vw;
-  }
-
-  .location table {
-    width: 92.2vw;
-    height: auto;
-  }
-
-  .location table td button {
-    width: 15.4vw;
-    height: 4.7vw;
-    line-height: 4.7vw;
-    font-size: 0.8125rem;
-    color: #333;
-  }
-
-  .rank h2 {
-    margin-bottom: 4.4vw;
-  }
-
-  .posters {
-    width: 92.2vw;
-    gap: 3.9vw;
-  }
-
-  .box {
-    width: 28.1vw;
-    overflow: hidden;
-  }
-
-  .box img {
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .hide_box {
-    display: none;
-  }
-
-  .rank .titles {
-    width: 92.2vw;
-    gap: 3.9vw;
-    margin-top: 1.8vw;
-    padding-bottom: 6.4vw;
-  }
-
-  .detail {
-    width: 27.7vw;
-    height: 9.2vw;
-    margin-left: 0.86vw;
-  }
-
-  .detail h4 {
-    font-size: 1rem;
-    font-weight: 700;
-    margin-bottom: 1vw;
-  }
-
-  .detail div {
-    font-size: 0.69rem;
-    margin-bottom: 1.3vw;
-  }
-
-  .top_con {
-    margin: 8.5vw 0 6.5vw;
-  }
-
-  .course {
-    width: 16.9vw;
-    height: 3.26vw;
-    font-size: 1.3125rem;
-    padding-left: 1.3vw;
-    color: #333;
-  }
-
-  .search_box {
-    height: 4.6vw;
-    width: 32.5vw;
-    border-radius: 2.86vw;
-    padding: 0 1.8vw;
-    box-sizing: border-box;
-  }
-
-  .search_text {
-    font-size: 0.975rem;
-    line-height: 4.6vw;
-    width: 22.4vw;
-  }
-
-  .search_btn {
-    width: 4.3vw;
-    height: 4.3vw;
-  }
-
-  .search_btn i {
-    font-size: 1.82vw;
-    line-height: 4.6vw;
-  }
-
-  .titles {
-    width: 92.2vw;
-    gap: 3.9vw;
-    margin-top: 1.8vw;
-    margin-bottom: 9.1vw;
-  }
-
-  /* footer */
-  footer {
-    height: 15vw; /* 7.5rem */
-    margin-top: 50px;
-  }
-
-  footer > .content img {
-    width: 6vw;
-    margin-right: 6.25vw;
-  }
-
-  footer > .content {
-    width: 87.3vw;
-    height: 15vw;
-    flex-direction: row;
-  }
-
-  .footer_text p {
-    font-size: 0.8vw; /* 0.375rem */
-    margin-bottom: 0.7vw; /* 0.1875rem */
-  }
-
-  .footer_text a {
-    text-decoration: none;
-  }
-
-  .right_icons > ul {
-    width: 18.1vw;
+    width: fit-content;
+    height: fit-content;
     display: flex;
-    gap: 1.67vw;
+    gap: clamp(6px, 2vw, 16px);
   }
 
-  .right_icons > ul > li {
-    width: 3.33vw;
-  }
-
-  .right_icons > ul > li img {
-    width: 3.13vw;
-    height: 3.13vw;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .content {
-    width: 89.9vw;
-    margin: 0 auto;
-  }
-
-  header {
-    width: 100%;
-    height: 6.84vw;
-  }
-
-  .con {
-    width: 89.9vw;
-    height: 6.84vw;
-  }
-
-  h1 {
-    width: 5.625rem;
-    height: 1.11rem;
-  }
-
-  h1 img {
-    width: 100%;
-  }
-
-  #gnb {
-    width: 48.83vw;
-    height: 4.875rem;
-  }
-
-  #gnb > ul {
-    gap: 3.5rem;
-  }
-
-  #gnb > ul > li {
-    font-size: 0.9375rem;
-  }
-
-  .submenu > li {
-    width: 5.1875rem;
-  }
-
-  #gnb::after {
-    top: 4.375rem;
+  .icons > button i {
+    font-size: clamp(16px, 30vw, 22px);
   }
 
   .xi-search,
   .xi-user-o {
-    font-size: 1.25rem;
+    color: #333;
   }
 
-  .icons {
-    gap: 1.25rem;
+  .icons .hamburger {
+    display: flex;
+    justify-content: center;
   }
-
-  /* 서브배너 */
+  .depth {
+    margin-top: 70px;
+    height: 10.55vw;
+    font-size: clamp(8px, 2.5vw, 13px);
+    line-height: 10.55vw;
+  }
   .sub_img {
-    height: 19.81vw; /* 171px -> 171 / 863 * 100 */
-    background: url(../../img/sub1-1/image1023.png) no-repeat;
+    height: clamp(90px, 28.125vw, 150px);
+    background: url(../../img/sub1-1/image479.png) no-repeat;
     background-size: cover;
   }
-
   .sub_text {
-    height: 19.81vw;
+    height: clamp(90px, 28.125vw, 150px);
   }
-
   .sub_text h3 {
-    font-size: 0.9375rem; /* 15px */
-    margin-bottom: 0.6875rem; /* 11px */
+    font-size: clamp(8px, 2.5vw, 13px);
+    margin-bottom: clamp(5px, 1.563vw, 10px);
   }
-
   .sub_text h2 {
-    font-size: 1.25rem; /* 20px */
-    margin-bottom: 1.875rem; /* 30px */
+    font-size: clamp(10px, 3.125vw, 15px);
+    margin-bottom: clamp(20px, 6.25vw, 30px);
   }
-
   .sub_text p {
-    font-size: 0.6875rem; /* 11px */
-    line-height: 1.25rem; /* 20px */
+    font-size: clamp(8px, 2.5vw, 13px);
+    line-height: 1.5;
   }
-
   .tab {
-    display: flex;
-    align-items: center;
-    margin: 2.8125rem 0; /* 45px */
+    margin: clamp(22.4px, 7vw, 44.7px) 0;
+    gap: clamp(8px, 2.5vw, 16px);
   }
-
   .tab a {
-    width: 6.25vw; /* 54px */
-    height: 3.59vw; /* 31px */
-    font-size: 0.8125rem; /* 13px */
-    line-height: 3.59vw;
+    width: clamp(35px, 10.938vw, 56px);
+    height: clamp(19px, 5.938vw, 32px);
+    border-radius: 100px;
+    font-size: clamp(8px, 2.5vw, 14px);
+    line-height: clamp(19px, 5.938vw, 32px);
   }
-
   h2 {
-    font-size: 1.25rem;
+    font-size: clamp(14px, 4.375vw, 20px);
   }
-
+  .tab__content-wrapper {
+    padding: 0;
+  }
   .location {
-    margin: 3.5vw 0 8.11vw 0; /* 30px 0 70px */
+    margin: clamp(16px, 5vw, 32px) 0 clamp(22.4px, 7vw, 44.7px);
   }
-
   .location table {
-    width: 89.9vw;
+    width: 100%;
     height: auto;
   }
-
   .location table td button {
-    width: calc(100% / 6);
-    height: 5.24vw; /* 45.24px */
-    line-height: 5.24vw;
-    font-size: 0.75rem; /* 12px */
-    cursor: pointer;
-  }
-
-  .rank h2 {
-    margin-bottom: 3.25vw; /* 28px */
-  }
-
-  .posters {
-    width: 89.9vw;
-    gap: 2.55vw; /* 22px */
-  }
-
-  .box {
-    width: 17.96vw; /* 155px */
-  }
-
-  .box img {
     width: 100%;
+    height: clamp(23px, 7.188vw, 50px);
+    line-height: clamp(16px, 5vw, 30px);
+    font-size: clamp(8px, 2.5vw, 14px);
+  }
+  .rank h2 {
+    margin: clamp(28px, 8.75vw, 56px) 0;
+  }
+  .exhibitions {
+    gap: clamp(6px, 3vw, 24px);
+    flex-wrap: wrap;
+  }
+  .poster {
+    width: clamp(170px, 27vw, 285px);
+    height: auto;
+    overflow: hidden;
   }
 
-  .rank .titles {
-    width: 89.9vw;
-    gap: 2.55vw;
-    margin-top: 1.62vw; /* 14px */
-    padding-bottom: 6.49vw; /* 56px */
+  .poster img {
+    width: clamp(170px, 27vw, 285px);
+    height: auto;
+    transform: scale(1);
+  }
+  .exhibition h4 {
+    width: clamp(140px, 25vw, 279px);
+    font-size: clamp(16px, 2vw, 18px);
+    margin: clamp(8px, 1vw, 10px) 0 clamp(8px, 1vw, 10px) clamp(4px, 2vw, 8px);
   }
 
-  .detail {
-    width: 17.5vw;
-    height: 10.9vw; /* 94px */
-    margin-left: 0.46vw; /* 4px */
+  .exhibition div:not(:first-of-type) {
+    width: clamp(140px, 25vw, 279px);
+    font-size: clamp(10px, 1.5vw, 13px);
+    margin: clamp(8px, 2vw, 11px) 0 clamp(8px, 1vw, 10px) clamp(4px, 1vw, 6px);
+  }
+  .rank .exhibition:last-child,
+  .rank .exhibition:nth-child(3) {
+    display: none;
   }
 
-  .detail h4 {
-    height: 2.2vw; /* 19px */
-    width: 17.96vw;
-    font-size: 1rem; /* 16px */
-    margin-bottom: 1.74vw; /* 15px */
+  .exhibition:first-child,
+  .exhibition:nth-child(2) {
+    margin-bottom: clamp(12px, 3vw, 20px);
   }
-
-  .detail div {
-    font-size: 0.625rem; /* 10px */
-    font-weight: 400;
-    margin-bottom: 1.16vw; /* 10px */
-  }
-
   .top_con {
-    margin: 0 0 9.27vw 0; /* 80px */
+    margin: clamp(32px, 10vw, 64px) 0 clamp(25.6px, 8vw, 51.2px);
   }
-
   .course {
-    width: 15.06vw; /* 130px */
-    height: 2.78vw; /* 24px */
-    font-size: 1rem; /* 16px */
-    padding-left: 0.93vw; /* 8px */
+    width: clamp(70.4px, 22vw, 140px);
+    height: clamp(16px, 5vw, 32px);
+    font-size: clamp(12px, 3.75vw, 18px);
+    padding-left: clamp(6.4px, 2vw, 12.8px);
+    color: #333;
   }
-
   .search_box {
-    height: 2.32vw; /* 20px */
-    width: 32.44vw; /* 280px */
-    border-radius: 2.55vw; /* 22px */
-    padding: 1.16vw; /* 10px */
-    border: 1px solid #587d00;
+    height: clamp(16px, 5vw, 32px);
+    width: clamp(108.8px, 34vw, 220px);
+    border-radius: clamp(22.08px, 6.9vw, 44.16px);
+    padding: 0 clamp(3.2px, 1vw, 7px) 0 clamp(3.2px, 1vw, 7px);
+    box-sizing: border-box;
   }
-
   .search_text {
-    font-size: 0.8125rem; /* 13px */
-    line-height: 2.32vw;
-    width: 23.18vw; /* 200px */
-    margin-left: 1.16vw; /* 10px */
+    font-size: clamp(7px, 2.188vw, 12px);
+    line-height: clamp(16px, 5vw, 32px);
+    width: clamp(57.6px, 19vw, 120px);
   }
-
   .search_btn {
-    width: 4.63vw; /* 40px */
-    height: 100%;
-    font-size: 0.625rem; /* 10px */
+    width: clamp(12.8px, 4vw, 25.6px);
+    height: clamp(14.4px, 4.5vw, 25px);
+    font-size: clamp(7.4px, 2.313vw, 14.8px);
   }
-
-  .titles {
-    width: 89.9vw;
-    gap: 2.55vw;
-    margin-top: 1.62vw; /* 14px */
-    margin-bottom: 9.27vw; /* 80px */
+  .search_btn i {
+    font-size: clamp(7.4px, 2.313vw, 14.8px);
+    line-height: clamp(14.4px, 4.5vw, 25px);
+  }
+  .local_list .exhibitions {
+    margin-bottom: clamp(30px, 9.375vw, 60px);
+  }
+  .local_list .exhibition {
+    margin-bottom: clamp(20px, 6.25vw, 40px);
   }
 
   footer {
-    height: 11.875rem;
-  }
-
-  footer > .content {
-    width: 87.5vw;
-    height: 11.875rem;
-  }
-
-  footer > .content img {
-    width: 5rem;
-    margin-right: 3.125rem;
-  }
-
-  .footer_text p {
-    font-size: 0.625rem;
-  }
-
-  .right_icons > ul {
-    width: 12.5rem;
+    width: 100%;
+    height: clamp(120px, 53.125vw, 200px);
+    background-color: #f8f8f8;
     display: flex;
-    gap: 0.9375rem;
   }
-
+  footer > .content {
+    width: 90%;
+    height: auto;
+  }
+  footer > .content > div > img {
+    display: none;
+  }
+  .footer_text p {
+    font-size: clamp(7px, 2.813vw, 10px);
+    color: #666;
+    margin-bottom: clamp(4px, 1.875vw, 8px);
+  }
+  .right_icons {
+    width: 170px;
+  }
+  .right_icons > ul {
+    justify-content: start;
+    gap: clamp(10px, 4.375vw, 14px);
+    margin-top: clamp(6px, 3.125vw, 10px);
+  }
   .right_icons > ul > li {
-    width: 1.875rem;
+    width: clamp(18px, 8.125vw, 30px);
   }
 
   .right_icons > ul > li img {
-    width: 1.875rem;
-    height: 1.875rem;
+    width: clamp(18px, 8.125vw, 30px);
+    height: clamp(18px, 8.125vw, 30px);
+    opacity: 0.5;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .content {
+    width: 87.5vw;
+    margin: 0 auto;
+  }
+  header {
+    width: 100%;
+    height: clamp(4rem, 4.375rem, 5vw);
+  }
+  .con {
+    width: 87.5vw;
+    height: clamp(4rem, 4.375rem, 5vw);
+  }
+  h1 {
+    width: clamp(5rem, 5.625rem, 6vw);
+    height: clamp(1rem, 1.11rem, 1.5vw);
+  }
+  h1 img {
+    width: 100%;
+  }
+  #gnb {
+    width: 48.83vw;
+    height: clamp(4.5rem, 4.875rem, 5.5vw);
+  }
+  #gnb > ul {
+    gap: clamp(2rem, 3.5rem, 4vw);
+  }
+  #gnb > ul > li {
+    font-size: clamp(0.875rem, 0.9375rem, 1.125rem);
+  }
+  .submenu > li {
+    width: clamp(4rem, 5.1875rem, 6vw);
+  }
+  #gnb::after {
+    top: clamp(4rem, 4.375rem, 5vw);
+  }
+  .xi-search,
+  .xi-user-o {
+    font-size: clamp(1rem, 1.25rem, 1.5rem);
+  }
+  .icons {
+    gap: clamp(1rem, 1.25rem, 2rem);
+  }
+  .main_img1,
+  .main_img2,
+  .main_img3 {
+    background-size: cover;
+    background-position: center center;
+  }
+  .title_text {
+    width: clamp(30rem, 40rem, 45rem);
+    height: clamp(20rem, 24.5rem, 30rem);
+    top: clamp(120px, 150px, 180px);
+    left: clamp(4rem, 6.25rem, 8rem);
+  }
+  .title_text h2 {
+    font-size: clamp(1.5rem, 28px, 2.25rem);
+    margin-bottom: clamp(1rem, 1.6875rem, 2rem);
+  }
+  .title_text h4 {
+    font-size: clamp(0.875rem, 16px, 1.125rem);
+    margin-bottom: clamp(0.5rem, 0.9375rem, 1rem);
+  }
+  .title_text2 p {
+    font-size: clamp(0.875rem, 16px, 1.125rem);
+    line-height: 2;
+    margin-top: clamp(20rem, 350px, 25rem);
+  }
+  .depth {
+    margin-top: 70px;
+    height: 10.55vw;
+    font-size: clamp(8px, 2.5vw, 13px);
+    line-height: 10.55vw;
+  }
+  .sub_img {
+    height: clamp(90px, 28.125vw, 150px);
+    background: url(../../img/sub1-1/image479.png) no-repeat;
+    background-size: cover;
+  }
+  .sub_text {
+    height: clamp(90px, 28.125vw, 150px);
+  }
+  .sub_text h3 {
+    font-size: clamp(8px, 2.5vw, 13px);
+    margin-bottom: clamp(5px, 1.563vw, 10px);
+  }
+  .sub_text h2 {
+    font-size: clamp(10px, 3.125vw, 15px);
+    margin-bottom: clamp(20px, 6.25vw, 30px);
+  }
+  .sub_text p {
+    font-size: clamp(8px, 2.5vw, 13px);
+    line-height: 1.5;
+  }
+  .tab {
+    margin: clamp(22.4px, 7vw, 44.7px) 0;
+    gap: clamp(8px, 2.5vw, 16px);
+  }
+  .tab a {
+    width: clamp(35px, 10.938vw, 56px);
+    height: clamp(19px, 5.938vw, 32px);
+    border-radius: 100px;
+    font-size: clamp(8px, 2.5vw, 14px);
+    line-height: clamp(19px, 5.938vw, 32px);
+  }
+  h2 {
+    font-size: clamp(14px, 4.375vw, 20px);
+  }
+  .tab__content-wrapper {
+    padding: 0;
+  }
+  .location {
+    margin: clamp(16px, 5vw, 32px) 0 clamp(22.4px, 7vw, 44.7px);
+  }
+  .location table {
+    width: 100%;
+    height: auto;
+  }
+  .location table td button {
+    width: 100%;
+    height: clamp(23px, 7.188vw, 50px);
+    line-height: clamp(16px, 5vw, 30px);
+    font-size: clamp(8px, 2.5vw, 14px);
+  }
+  .rank h2 {
+    margin: clamp(28px, 8.75vw, 56px) 0;
+  }
+  .exhibitions {
+    width: 100%;
+    gap: clamp(12px, 1vw, 16px);
+  }
+  .poster {
+    width: clamp(165px, calc(18vw - 22.7px), 235px);
+    height: auto;
+    overflow: hidden;
+  }
+  .poster img {
+    width: 100%;
+  }
+  .exhibition h4 {
+    width: clamp(165px, calc(18vw - 22.7px), 235px);
+    font-size: clamp(0.875rem, 16px, 1.125rem);
+    margin: 10px 0 12px 4px;
+  }
+  .exhibition div:not(:first-of-type) {
+    width: clamp(160px, calc(17.75vw - 23.5px), 235px);
+    font-size: clamp(0.625rem, 10px, 0.75rem);
+    font-weight: 400;
+    margin-bottom: 8px;
+    margin-left: 4px;
+  }
+  .top_con {
+    margin: clamp(32px, 10vw, 64px) 0 clamp(25.6px, 8vw, 51.2px);
+  }
+  .course {
+    width: clamp(70.4px, 22vw, 140px);
+    height: clamp(16px, 5vw, 32px);
+    font-size: clamp(12px, 3.75vw, 18px);
+    padding-left: clamp(6.4px, 2vw, 12.8px);
+    color: #333;
+  }
+  .search_box {
+    height: clamp(16px, 5vw, 32px);
+    width: clamp(108.8px, 34vw, 220px);
+    border-radius: clamp(22.08px, 6.9vw, 44.16px);
+    padding: 0 clamp(3.2px, 1vw, 7px) 0 clamp(3.2px, 1vw, 7px);
+    box-sizing: border-box;
+  }
+  .search_text {
+    font-size: clamp(7px, 2.188vw, 12px);
+    line-height: clamp(16px, 5vw, 32px);
+    width: clamp(57.6px, 19vw, 120px);
+  }
+  .search_btn {
+    width: clamp(12.8px, 4vw, 25.6px);
+    height: clamp(14.4px, 4.5vw, 25px);
+    font-size: clamp(7.4px, 2.313vw, 14.8px);
+  }
+  .search_btn i {
+    font-size: clamp(7.4px, 2.313vw, 14.8px);
+    line-height: clamp(14.4px, 4.5vw, 25px);
+  }
+  .local_list .exhibitions {
+    margin-bottom: clamp(30px, 9.375vw, 60px);
+  }
+  .local_list .exhibition {
+    margin-bottom: clamp(20px, 6.25vw, 40px);
+  }
+  footer {
+    height: clamp(160px, 15vw, 190px);
+  }
+  footer > .content {
+    width: 87.5vw;
+    height: clamp(160px, 15vw, 190px);
+  }
+  footer > .content img {
+    width: clamp(56px, 5vw, 80px);
+    margin-right: clamp(32px, 4vw, 50px);
+  }
+  .footer_text p {
+    font-size: clamp(8px, 0.9vw, 10px);
+  }
+  .right_icons > ul {
+    width: clamp(160px, 15vw, 200px);
+    display: flex;
+    gap: clamp(8px, 1.2vw, 15px);
+  }
+  .right_icons > ul > li {
+    width: clamp(24px, 2.5vw, 30px);
+  }
+  .right_icons > ul > li img {
+    width: clamp(24px, 2.5vw, 30px);
+    height: clamp(24px, 2.5vw, 30px);
+    opacity: 0.5;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1600px) {
+  .content {
+    width: 87.5vw;
+    margin: 0 auto;
+  }
+  header {
+    width: 100%;
+    height: 5vw;
+  }
+  .con {
+    width: 87.5vw;
+    height: 5vw;
+  }
+  h1 {
+    width: 6vw;
+    height: 1.5vw;
+  }
+  h1 img {
+    width: 100%;
+  }
+  #gnb {
+    width: 48.83vw;
+    height: 5.5vw;
+  }
+  #gnb > ul {
+    gap: 4vw;
+  }
+  #gnb > ul > li {
+    font-size: 1.125rem;
+  }
+  .submenu > li {
+    width: 6vw;
+  }
+  #gnb::after {
+    top: 5vw;
+  }
+  .xi-search,
+  .xi-user-o {
+    font-size: 1.5rem;
+  }
+  .icons {
+    gap: 2rem;
+  }
+  .main_img1,
+  .main_img2,
+  .main_img3 {
+    background-size: cover;
+    background-position: center center;
+  }
+  .title_text {
+    width: 45rem;
+    height: 30rem;
+    top: 180px;
+    left: 8rem;
+  }
+  .title_text h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  .title_text h4 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+  .title_text2 p {
+    font-size: 1.125rem;
+    line-height: 2;
+    margin-top: 16rem;
+  }
+  .depth {
+    margin-top: 70px;
+    height: 10.55vw;
+    font-size: clamp(8px, 2.5vw, 13px);
+    line-height: 10.55vw;
+  }
+  .sub_img {
+    height: clamp(90px, 28.125vw, 150px);
+    background: url(../../img/sub1-1/image479.png) no-repeat;
+    background-size: cover;
+  }
+  .sub_text {
+    height: clamp(90px, 28.125vw, 150px);
+  }
+  .sub_text h3 {
+    font-size: clamp(8px, 2.5vw, 13px);
+    margin-bottom: clamp(5px, 1.563vw, 10px);
+  }
+  .sub_text h2 {
+    font-size: clamp(10px, 3.125vw, 15px);
+    margin-bottom: clamp(20px, 6.25vw, 30px);
+  }
+  .sub_text p {
+    font-size: clamp(8px, 2.5vw, 13px);
+    line-height: 1.5;
+  }
+  .tab {
+    margin: clamp(22.4px, 7vw, 44.7px) 0;
+    gap: clamp(8px, 2.5vw, 16px);
+  }
+  .tab a {
+    width: clamp(35px, 10.938vw, 56px);
+    height: clamp(19px, 5.938vw, 32px);
+    border-radius: 100px;
+    font-size: clamp(8px, 2.5vw, 14px);
+    line-height: clamp(19px, 5.938vw, 32px);
+  }
+  h2 {
+    font-size: clamp(14px, 4.375vw, 18px);
+  }
+  .tab__content-wrapper {
+    padding: 0;
+  }
+  .location {
+    margin: clamp(16px, 5vw, 32px) 0 clamp(22.4px, 7vw, 44.7px);
+  }
+  .location table {
+    width: 100%;
+    height: auto;
+  }
+  .location table td button {
+    width: 100%;
+    height: clamp(23px, 7.188vw, 60px);
+    line-height: clamp(16px, 5vw, 30px);
+    font-size: clamp(8px, 2.5vw, 14px);
+  }
+  .rank h2 {
+    margin: clamp(28px, 8.75vw, 56px) 0;
+  }
+  .exhibitions {
+    width: 100%;
+    gap: 20px;
+  }
+  .poster {
+    width: clamp(225px, 16vw, 265px);
+    height: auto;
+    overflow: hidden;
+  }
+  .poster img {
+    width: 100%;
+  }
+  .exhibition h4 {
+    width: clamp(225px, 16vw, 265px);
+    font-size: 1.125rem;
+    margin: 10px 0 12px 4px;
+  }
+  .exhibition div:not(:first-of-type) {
+    width: clamp(225px, 16vw, 265px);
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+    margin-left: 4px;
+  }
+  .top_con {
+    margin: clamp(32px, 10vw, 64px) 0 clamp(25.6px, 8vw, 51.2px);
+  }
+  .course {
+    width: clamp(70.4px, 22vw, 140px);
+    height: clamp(16px, 5vw, 32px);
+    font-size: clamp(12px, 3.75vw, 18px);
+    padding-left: clamp(6.4px, 2vw, 12.8px);
+    color: #333;
+  }
+  .search_box {
+    height: clamp(16px, 5vw, 32px);
+    width: clamp(108.8px, 34vw, 220px);
+    border-radius: clamp(22.08px, 6.9vw, 44.16px);
+    padding: 0 clamp(3.2px, 1vw, 7px) 0 clamp(3.2px, 1vw, 7px);
+    box-sizing: border-box;
+  }
+  .search_text {
+    font-size: clamp(7px, 2.188vw, 12px);
+    line-height: clamp(16px, 5vw, 32px);
+    width: clamp(57.6px, 19vw, 120px);
+  }
+  .search_btn {
+    width: clamp(12.8px, 4vw, 25.6px);
+    height: clamp(14.4px, 4.5vw, 25px);
+    font-size: clamp(7.4px, 2.313vw, 14.8px);
+  }
+  .search_btn i {
+    font-size: clamp(7.4px, 2.313vw, 14.8px);
+    line-height: clamp(14.4px, 4.5vw, 25px);
+  }
+  .local_list .exhibitions {
+    margin-bottom: clamp(30px, 9.375vw, 60px);
+  }
+  .local_list .exhibition {
+    margin-bottom: clamp(20px, 6.25vw, 40px);
+  }
+  footer {
+    height: clamp(160px, 15vw, 190px);
+  }
+  footer > .content {
+    width: 87.5vw;
+    height: clamp(160px, 15vw, 190px);
+  }
+  footer > .content img {
+    width: clamp(56px, 5vw, 80px);
+    margin-right: clamp(32px, 4vw, 50px);
+  }
+  .footer_text p {
+    font-size: clamp(8px, 0.9vw, 10px);
+  }
+  .right_icons > ul {
+    width: clamp(160px, 15vw, 200px);
+    display: flex;
+    gap: clamp(8px, 1.2vw, 15px);
+  }
+  .right_icons > ul > li {
+    width: clamp(24px, 2.5vw, 30px);
+  }
+  .right_icons > ul > li img {
+    width: clamp(24px, 2.5vw, 30px);
+    height: clamp(24px, 2.5vw, 30px);
     opacity: 0.5;
   }
 }

@@ -260,6 +260,9 @@ header:hover {
   line-height: 33px;
   margin-top: 442px;
 }
+.more_view {
+  display: none;
+}
 /* 두번째 섹션 */
 .sec2 {
   margin-top: 130px;
@@ -438,6 +441,7 @@ button > i {
   margin-bottom: 170px;
 }
 .sec4_con {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }

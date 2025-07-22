@@ -209,7 +209,7 @@ h2 {
   border: 1px solid #587d00;
   border-radius: 999px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 100px 0 100px;
   box-sizing: border-box;
 }
@@ -263,10 +263,14 @@ h2 {
   text-overflow: ellipsis;
 }
 .exhibition div:not(:first-of-type) {
+  width: 268px;
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 15px;
   margin-left: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .price_list .exhibitions {
   margin-bottom: 50px;

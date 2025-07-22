@@ -140,7 +140,7 @@ h1 {
   color: #333;
   font-size: 25px;
 }
-.hamburger {
+.icons .hamburger {
   display: none;
 }
 /* 헤더 호버 */

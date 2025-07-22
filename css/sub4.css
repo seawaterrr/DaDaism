@@ -285,10 +285,14 @@ h1 {
   text-overflow: ellipsis;
 }
 .exhibition div:not(:first-of-type) {
+  width: 268px;
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 15px;
   margin-left: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .poster:hover {
   transform: translateY(-10px);

@@ -250,7 +250,7 @@ h2 {
   border: none;
   background-color: transparent;
   width: 266.89px;
-  height: 69.58;
+  height: 69.58px;
   line-height: 69.58px;
   font-size: 16px;
   cursor: pointer;
@@ -300,10 +300,14 @@ h2 {
   text-overflow: ellipsis;
 }
 .exhibition div:not(:first-of-type) {
+  width: 268px;
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 15px;
   margin-left: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .local_list .exhibition {
   margin-bottom: 100px;
