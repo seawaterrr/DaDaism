@@ -304,10 +304,14 @@ header:hover {
   text-overflow: ellipsis;
 }
 .exhibition div:not(:first-of-type) {
+  width: 268px;
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 15px;
   margin-left: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 /* 세번째 섹션 */
 .sec3 {
