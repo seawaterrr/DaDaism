@@ -284,7 +284,7 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.exhibition div:not(:first-of-type) {
+.exhibition a div {
   width: 268px;
   font-size: 15px;
   font-weight: 400;
